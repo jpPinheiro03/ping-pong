@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping-Pong-Life</title>
-    <link rel="shortcut icon" href="imagens/dxes022-1-raquete-de-tenis-de-mesa-dhs-classica-h1003-ittf-approved-1-estrela.jpg" type="image/x-icon">
-     <link rel="stylesheet" href="pong.css">
+    <link rel="shortcut icon"
+        href="imagens/dxes022-1-raquete-de-tenis-de-mesa-dhs-classica-h1003-ittf-approved-1-estrela.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="pong.css">
 </head>
-<body>
-    <nav class="navegacao">
-        <li>
-        </li>
-    </nav>
-    <div>
 
+<body>
+
+
+
+<!--// navegação -->
+    <nav class="navegacao">
+        <div id="logo">
+            <h1>JOÃO-ANBI</h1>
+        </div>
+        <div id="links">
+            <li><a href="#home">home</a></li>
+            <li><a href="#suporte">suporte</a></li>
+            <li><a href="#curiosidades">curiosidades</a></li>
+        </div>
+    </nav>
+<br>
+
+
+
+<!-- // titulo  -->
+    <div id="titulo">
+        <h1>Table_tenis</h1>
     </div>
+<br>
+
+
+
+    <!-- // primeiro botão Hist -->
+    <button onclick="projetar()">Clique Aqui!</button>
+
+    <br>
+    <div id="sobre">    </div>
+    <div id="imagemHistória"></div>
+<br>
+
+
+<!-- // botão de exibir jogadores! -->
+    <button onclick="jogadores()">Jogadores!</button>
+
+<br>
+    <div id="jogadoresFav">
+<br>
+        <section id="sun"></section>
+        <br>
+        <section id="mima"></section>
+        <br>
+        <section id="miwa"></section>
+        <br>
+        <section id="ma"></section>
+        <br>
+        <section id="fan"></section>
+        <br>
+        <section id="Hugo"></section>
+        
+       
+        
+        
+        
+        
+    </div>
+
 </body>
+<script>
+
+
+    function projetar() {
+        var imagem = `<img src=".//imagens/historia-do-tenis-de-mesa.jpg" height="150px" >`
+        sobre.innerHTML = `O tênis de mesa apesar de muitas pessoas terem a China como grande referência devido muitos títulos, a Inglaterra foi a real desenvolvedora e mãe de tal esporte, que foi desenvolvido na metáde do séc XIX com o objetivo de ser um passa tempo social e futuramente com o grande sucesso foi oficializado como esporte! <br>`
+        imagemHistória.innerHTML += `${imagem}`
+
+
+    }
+
+
+    function jogadores() {
+        var imagemJogadores =``
+        sun.innerHTML = `Sun Yingsha  -- [24 Anos] <br> <img src=".//imagens/sun yingsha.jpg" height="100px" >`
+        mima.innerHTML =`Mima Ito  -- [24 Anos] <br> <img src=".//imagens/mima ito.jpg"height="100px" >`
+        miwa.innerHTML = `Miwa Harimoto  -- [16 Anos] <br> <img src=".//imagens/miwa harimoto.jpg"height="100px" > `
+        fan.innerHTML =`Fan Zhengdong  -- [28 Anos] <br> <img src=".//imagens/fan zhendong.jpeg"height="100px" >`
+        ma.innerHTML =`Ma Long  -- [36 Anos] <br> <img src=".//imagens/ma long.webp"height="100px" >`
+        Hugo.innerHTML =`Hugo Calderano  -- [28 Anos] <br> <img src=".//imagens/hugo-calderano-premiacao-3.webp"height="100px" >`
+
+    }
+
+</script>
+
 </html>
