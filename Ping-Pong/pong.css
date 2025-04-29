@@ -1,21 +1,96 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+:root {
+  --tamanho-header: 80px;
+  --tamanho-footer:90px;
+  --tamanho--banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+}
 
-.navegacao{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: black;
+header {
+  background-color: #121212;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+}
+.banner{
+  height: var(--banner);
   color: white;
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  background-image: url("../Ping-Pong/imagens/nova\ hist.jpg");
+  background-size: cover;
 
 }
 
 
-.navegacao.logo{
-    
-    
+.banner .container{
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 100px;
 }
+
+
+
+.banner .container p{
+  width: 50%;
+  margin: 0;
+  padding: 10px;
+  font-size: 22px;
+  margin-right: 700px;
+  margin-top: -400px;
+
+}
+
+.container {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+
+.botaoJogador{
+  color:white;
+  background-color: rgb(39, 39, 73);
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1%;
+  margin-left: 10px;
+  
+
+}
+
+.histIMG{
+  margin: none;
+  height: 450px;
+  display: flex;
+}
+
+.logo {
+  height: 70px;
+}
+
+
+
+
+
+
+
+

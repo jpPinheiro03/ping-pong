@@ -10,89 +10,85 @@
         type="image/x-icon">
     <link rel="stylesheet" href="pong.css">
 </head>
-
 <body>
 
 
 
+
+
+
+
+
+
+
 <!--// navegação -->
-    <nav class="navegacao">
-        <div id="logo">
-            <h1>JOÃO-ANBI</h1>
-        </div>
-        <div id="links">
-            <li><a href="#home">home</a></li>
-            <li><a href="#suporte">suporte</a></li>
-            <li><a href="#curiosidades">curiosidades</a></li>
-        </div>
-    </nav>
-<br>
-
-
-
-<!-- // titulo  -->
-    <div id="titulo">
-        <h1>Table_tenis</h1>
+<header>
+    <div class="container">
+        <img src="../Ping-Pong/imagens/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo">
+        <h1>W.T.T</h1>
+        <nav class="navegacao">
+            <div class="links navegacao">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#suporte">suporte</a></li>
+                    <li><a href="#curiosidades">curiosidades</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-<br>
+</header>
+
+
+
+
+
 
 
 
     <!-- // primeiro botão Hist -->
-    <button onclick="projetar()">Clique Aqui!</button>
+    <div class="banner">
+        <div class="container texto">
+            <p>O tênis de mesa apesar de muitas pessoas terem a China como grande referência devido muitos títulos, a Inglaterra foi a real desenvolvedora e mãe de tal esporte, que foi desenvolvido na metáde do séc XIX com o objetivo de ser um passa tempo social e futuramente com o grande sucesso foi oficializado como esporte!</p>
+        </div>
+      </div>
+    
 
-    <br>
-    <div id="sobre">    </div>
-    <div id="imagemHistória"></div>
-<br>
+
+
+
 
 
 <!-- // botão de exibir jogadores! -->
-    <button onclick="jogadores()">Jogadores!</button>
+    <button onclick="jogadores()" class="botaoJogador">Jogadores!</button>
 
-<br>
-    <div id="jogadoresFav">
-<br>
-        <section id="sun"></section>
-        <br>
-        <section id="mima"></section>
-        <br>
-        <section id="miwa"></section>
-        <br>
-        <section id="ma"></section>
-        <br>
-        <section id="fan"></section>
-        <br>
-        <section id="Hugo"></section>
-        
-       
-        
-        
-        
-        
-    </div>
+
+    <section id="jogadoresFav">
+        <div id="sunT" class="player texto"></div>
+
+        <div id="mimaT" class="player texto"></div>
+
+        <div id="miwaT" class="player texto"></div>
+
+        <div id="maT" class="player texto"></div>
+
+        <div id="fanT" class="player texto"></div>
+
+        <div id="HugoT" class="player texto"></div>
+    </section>
+  
 
 </body>
 <script>
 
 
-    function projetar() {
-        var imagem = `<img src=".//imagens/historia-do-tenis-de-mesa.jpg" height="150px" >`
-        sobre.innerHTML = `O tênis de mesa apesar de muitas pessoas terem a China como grande referência devido muitos títulos, a Inglaterra foi a real desenvolvedora e mãe de tal esporte, que foi desenvolvido na metáde do séc XIX com o objetivo de ser um passa tempo social e futuramente com o grande sucesso foi oficializado como esporte! <br>`
-        imagemHistória.innerHTML += `${imagem}`
-
-
-    }
-
-
     function jogadores() {
         var imagemJogadores =``
-        sun.innerHTML = `Sun Yingsha  -- [24 Anos] <br> <img src=".//imagens/sun yingsha.jpg" height="100px" >`
-        mima.innerHTML =`Mima Ito  -- [24 Anos] <br> <img src=".//imagens/mima ito.jpg"height="100px" >`
-        miwa.innerHTML = `Miwa Harimoto  -- [16 Anos] <br> <img src=".//imagens/miwa harimoto.jpg"height="100px" > `
-        fan.innerHTML =`Fan Zhengdong  -- [28 Anos] <br> <img src=".//imagens/fan zhendong.jpeg"height="100px" >`
-        ma.innerHTML =`Ma Long  -- [36 Anos] <br> <img src=".//imagens/ma long.webp"height="100px" >`
-        Hugo.innerHTML =`Hugo Calderano  -- [28 Anos] <br> <img src=".//imagens/hugo-calderano-premiacao-3.webp"height="100px" >`
+        sunT.innerHTML = `Sun Yingsha  -- [24 Anos] <br> <img src=".//imagens/sun yingsha.jpg" height="100px" >`
+        mimaT.innerHTML =`Mima Ito  -- [24 Anos] <br> <img src=".//imagens/mima ito.jpg"height="100px" >`
+        miwaT.innerHTML = `Miwa Harimoto  -- [16 Anos] <br> <img src=".//imagens/miwa harimoto.jpg"height="100px" > `
+        fanT.innerHTML =`Fan Zhengdong  -- [28 Anos] <br> <img src=".//imagens/fan zhendong.jpeg"height="100px" >`
+        maT.innerHTML =`Ma Long  -- [36 Anos] <br> <img src=".//imagens/ma long.webp"height="100px" >`
+        HugoT.innerHTML =`Hugo Calderano  -- [28 Anos] <br> <img src=".//imagens/hugo-calderano-premiacao-3.webp"height="100px" >`
 
     }
 
