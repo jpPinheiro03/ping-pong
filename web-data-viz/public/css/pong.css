@@ -31,7 +31,7 @@ nav a {
     color: #f1f1f1;
     text-decoration: none;
     font-weight: 500;
-    background-color: rgb(133, 77, 47);  
+    background-color: rgb(127, 76, 49);  
     border-radius: 8px; 
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -93,33 +93,6 @@ nav a:hover {
   line-height: 1.6;
 }
 
-.botaoJogador {
-  color: white;
-  background-color: rgb(39, 39, 73);
-  width: 120px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  margin: 20px auto;
-  display: block;
-  cursor: pointer;
-}
-
-#jogadoresFav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.player {
-  background-color: #1e1e1e;
-  padding: 10px;
-  border-radius: 10px;
-  width: 180px;
-  text-align: center;
-}
 
 footer {
   background-color: #121212;
