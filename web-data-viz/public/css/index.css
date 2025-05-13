@@ -10,6 +10,10 @@
   --banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #000;
@@ -20,7 +24,6 @@ header {
     background-color: #121212;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    position: sticky;
     top: 0;
 }
 
@@ -125,4 +128,12 @@ footer .rodape a {
   footer {
     padding: 15px 0; 
   }
+}
+
+
+section{
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: var(--banner);
 }
