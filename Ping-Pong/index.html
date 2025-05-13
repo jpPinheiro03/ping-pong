@@ -10,88 +10,41 @@
         type="image/x-icon">
     <link rel="stylesheet" href="pong.css">
 </head>
+
 <body>
 
-
-
-
-
-
-
-
-
-
-<!--// navegação -->
-<header>
-    <div class="container">
-        <img src="../Ping-Pong/imagens/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo">
-        <h1>W.T.T</h1>
-        <nav class="navegacao">
-            <div class="links navegacao">
+    <header>
+        <div class="container">
+            <img src="imagens/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo"
+                alt="Logo Ping Pong">
+            <h1>W.T.T</h1>
+            <nav class="navegacao">
                 <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#suporte">suporte</a></li>
-                    <li><a href="#curiosidades">curiosidades</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#suporte">Suporte</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
                 </ul>
-            </div>
-        </nav>
-    </div>
-</header>
-
-
-
-
-
-
-
-
-    <!-- // primeiro botão Hist -->
-    <div class="banner">
-        <div class="container texto">
-            <p>O tênis de mesa apesar de muitas pessoas terem a China como grande referência devido muitos títulos, a Inglaterra foi a real desenvolvedora e mãe de tal esporte, que foi desenvolvido na metáde do séc XIX com o objetivo de ser um passa tempo social e futuramente com o grande sucesso foi oficializado como esporte!</p>
+            </nav>
         </div>
-      </div>
-    
+    </header>
+
+    <div class="banner">
+        <p>
+            O tênis de mesa, apesar de muitas pessoas terem a China como grande referência devido aos títulos,
+            teve sua origem na Inglaterra, onde foi desenvolvido no século XIX como passatempo social. Posteriormente,
+            com grande sucesso, foi oficializado como esporte!
+        </p>
+    </div>
 
 
-
-
-
-
-<!-- // botão de exibir jogadores! -->
-    <button onclick="jogadores()" class="botaoJogador">Jogadores!</button>
-
-
-    <section id="jogadoresFav">
-        <div id="sunT" class="player texto"></div>
-
-        <div id="mimaT" class="player texto"></div>
-
-        <div id="miwaT" class="player texto"></div>
-
-        <div id="maT" class="player texto"></div>
-
-        <div id="fanT" class="player texto"></div>
-
-        <div id="HugoT" class="player texto"></div>
-    </section>
-  
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2025 Ping-Pong-Life. Todos os direitos reservados.</p>
+            <p>Desenvolvido por João Pedro Santos Pinheiro</p>
+        </div>
+    </footer>
 
 </body>
-<script>
 
-
-    function jogadores() {
-        var imagemJogadores =``
-        sunT.innerHTML = `Sun Yingsha  -- [24 Anos] <br> <img src=".//imagens/sun yingsha.jpg" height="100px" >`
-        mimaT.innerHTML =`Mima Ito  -- [24 Anos] <br> <img src=".//imagens/mima ito.jpg"height="100px" >`
-        miwaT.innerHTML = `Miwa Harimoto  -- [16 Anos] <br> <img src=".//imagens/miwa harimoto.jpg"height="100px" > `
-        fanT.innerHTML =`Fan Zhengdong  -- [28 Anos] <br> <img src=".//imagens/fan zhendong.jpeg"height="100px" >`
-        maT.innerHTML =`Ma Long  -- [36 Anos] <br> <img src=".//imagens/ma long.webp"height="100px" >`
-        HugoT.innerHTML =`Hugo Calderano  -- [28 Anos] <br> <img src=".//imagens/hugo-calderano-premiacao-3.webp"height="100px" >`
-
-    }
-
-</script>
 
 </html>
