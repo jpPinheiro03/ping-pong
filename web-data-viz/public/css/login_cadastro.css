@@ -2,8 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   
 }
 
+:root {
+    --tamanho-header: 80px;
+    --tamanho-footer: 90px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px)
+}
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -102,5 +108,15 @@ footer .rodape a {
 section{
   background-color: white;
   color: black;
+  text-align: center;
+  height: var(--tamanho-banner);
+}
+
+
+
+.cadastro_login{
+  height: auto;
+  width: auto;
+  border-radius: 30%;
   text-align: center;
 }
