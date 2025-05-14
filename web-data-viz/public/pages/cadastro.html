@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../public/css/login_cadastro.css">
+    <link rel="shortcut icon"
+        href="../assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp"
+        type="image/x-icon">
+    <link rel="stylesheet" href="../css/login_cadastro.css">
+    <script src="../js/sessao.js"></script>
 </head>
 <body>
+
     <header>
         <div class="container">
-            <img src="../public/assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo"
+            <img src="../assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo"
                 alt="Logo Ping Pong">
-            <h1>LOGIN</h1>
+            <h1>Cadastro</h1>
             <nav class="navegacao">
                 <ul>
-                    <li><a href="index.html">Sair</a></li>
-                    <li><a href="cadastro.html">Cadastrar</a></li>
+                    <li><a href="../index.html">Sair</a></li>
                 </ul>
-        </div>
         </div>
     </header>
     
@@ -26,17 +29,26 @@
         <div class="cadastro_login">
             <label for="ipt_nome">Insira seu nome:</label>
             <input type="text" id="ipt_nome">
-<br>
+
             <label for="ipt_email">Insira seu email:</label>
             <input type="text" id="ipt_email">
-<br>
+                
+            <label>Seu tipo de empunhadura:</label>
+            <select id="sel_empunhadura">
+                <option value="#"></option>
+                <option value="Caneta">Caneta</option>
+                <option value="Classico">Clássico</option>
+                <option value="Classineta">Classineta</option>
+            </select>
+
             <label for="ipt_senha">Insira uma senha :</label>
             <input type="password" id="ipt_senha">
-<br>
-            <button onclick="Autenticar()">Logar!</button>
+            
+            
+            <button onclick="cadastrar()">Cadastrar</button>
         </div>
     </section>
-    
+
     <footer class="rodape">
         <div class="container">
             <p>&copy; 2025 Ping-Pong-Life. Todos os direitos reservados.</p>
@@ -45,5 +57,5 @@
     </footer>
     
 </body>
-</html>
+<script src="../js/cadastro.js"></script>
 </html>
