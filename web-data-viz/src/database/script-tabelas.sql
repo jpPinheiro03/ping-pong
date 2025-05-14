@@ -7,15 +7,11 @@ CREATE TABLE usuario (
 	nome VARCHAR(50),
 	email VARCHAR(50),
 	senha VARCHAR(50),
-	fkEmpunhaura int
-	FOREIGN KEY (fkEmpunhaura) REFERENCES empunhadura(id)
+	empunhadura VARCHAR (15),
+	constraint ck_empunhadura check(empunhadura in("Caneta","Clásico","Classineta"))
 );
 
-create table empunhadura(
-	id int PRIMARY KEY AUTO_INCREMENT,
-	tipo VARCHAR (15),
-	constraint ck_empunhadura check(tipo in("Caneta","Clásico","Classineta"))
-);
+
 
 
 
