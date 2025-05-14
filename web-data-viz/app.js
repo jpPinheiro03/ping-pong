@@ -17,10 +17,6 @@ var app = express();
 
 var indexRouter = require("./src/routes/index");
 var usuarioRouter = require("./src/routes/usuarios");
-<<<<<<< HEAD
-=======
-
->>>>>>> 5e47e3957879e387c74ee9081c0bc4913a7f9ba4
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
