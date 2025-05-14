@@ -15,7 +15,7 @@ function entrar() {
     console.log("FORM SENHA: ", senhaVar);
 
 
-        fetch("/montadora/autenticar", {
+        fetch("/usuarios/autenticar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

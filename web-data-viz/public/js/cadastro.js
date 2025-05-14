@@ -1,7 +1,4 @@
 
-// Array para armazenar empresas cadastradas para validação de código de ativação 
-let listaMontadorasCadastradas = [];
-
 function cadastrar() {
 
   //Recupere o valor da nova input pelo nome do id
@@ -55,7 +52,7 @@ function cadastrar() {
   }
 
   // Enviando o valor da nova input
-  fetch("/montadora/cadastrar", {
+  fetch("/usuarios/cadastrar", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -8,11 +8,8 @@ CREATE TABLE usuario (
 	email VARCHAR(50),
 	senha VARCHAR(50),
 	empunhadura VARCHAR (15),
-	constraint ck_empunhadura check(empunhadura in("Caneta","Clásico","Classineta"))
+	constraint ck_empunhadura check(empunhadura in("Caneta","Clássico","Classineta"))
 );
-
-
-
 
 
 
