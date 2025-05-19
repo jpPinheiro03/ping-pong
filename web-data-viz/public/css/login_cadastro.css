@@ -120,7 +120,7 @@ section{
 }
 
 
-.sessao-cadastro {
+.sessao{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@ section{
 }
 
 /* Estilo da div que contém o formulário */
-.formulario-cadastro {
+.formulario {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
@@ -141,21 +141,21 @@ section{
     gap: 15px;
 }
 
-.formulario-cadastro h2 {
+.formulario h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #1d3557;
 }
 
 /* Labels */
-.formulario-cadastro label {
+.formulario label {
     font-weight: 500;
     color: #333;
 }
 
 /* Inputs e select */
-.formulario-cadastro input,
-.formulario-cadastro select {
+.formulario input,
+.formulario select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -163,7 +163,7 @@ section{
 }
 
 /* Botão */
-.formulario-cadastro button {
+.formulario button {
     background-color: #e63946;
     color: white;
     padding: 12px;
@@ -175,15 +175,17 @@ section{
     transition: background-color 0.3s;
 }
 
-.formulario-cadastro button:hover {
+.formulario button:hover {
     background-color: #d62839;
 }
 
 /* Responsivo */
 @media (max-width: 600px) {
-    .formulario-cadastro {
+    .formulario {
         padding: 30px 20px;
     }
 }
+
+
 
 
