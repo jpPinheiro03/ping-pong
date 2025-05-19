@@ -15,6 +15,3 @@ CREATE TABLE usuario (
 
 
 
-
-
-
