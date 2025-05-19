@@ -1,4 +1,4 @@
-var montadoraModel = require("../models/usuarioModel");
+var usuarioModel = require("../models/usuarioModel");
 
 function autenticar(req, res) {
     var email = req.body.emailServer;
@@ -25,7 +25,7 @@ function autenticar(req, res) {
                                         id: resultadoAutenticar[0].id,
                                         nome: resultadoAutenticar[0].nome,
                                         email: resultadoAutenticar[0].email,
-                                        empunhadura: resultadoAutenticar[0].empunhadura
+                                        senha: resultadoAutenticar[0].senha
                                     });
 
                             
@@ -49,8 +49,8 @@ function autenticar(req, res) {
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var nome = req.body.nomeServer;
-    var email = req.body.emailServer;
     var empunhadura = req.body.empunhaduraServer;
+    var email = req.body.emailServer;
     var senha = req.body.senhaServer;
     
     // Faça as validações dos valores
@@ -66,7 +66,7 @@ function cadastrar(req, res) {
     else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        montadoraModel.cadastrar(nome,email,empunhadura,senha)
+        montadoraModel.cadastrar(nome,empunhadura,email,senha)
             .then(
                 function (resultado) {
                     res.json(resultado);

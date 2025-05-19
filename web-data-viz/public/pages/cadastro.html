@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
     <link rel="stylesheet" href="../css/login_cadastro.css">
     <script src="../js/sessao.js"></script>
 </head>
+
 <body>
 
     <header>
         <div class="container">
-            <img src="../assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo"
-                alt="Logo Ping Pong">
+            <img src="../assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp"
+                class="logo" alt="Logo Ping Pong">
             <h1>Cadastro</h1>
             <nav class="navegacao">
                 <ul>
@@ -23,40 +25,41 @@
                 </ul>
         </div>
     </header>
-    
+
 
     <section class="sessao">
-    <div class="formulario">
-        <h2>Crie sua Conta</h2>
+        <div class="formulario">
+            <h2>Crie sua Conta</h2>
 
-            <label for="ipt_email">Insira seu email:</label>
-            <input type="text" id="ipt_email">
-                
-            <label>Seu tipo de empunhadura:</label>
+            <label>Insira seu nome:</label>
+            <input type="text" id="ipt_nome">
+
+            <label for="sel_empunhadura">Tipo de empunhadura:</label>
             <select id="sel_empunhadura">
-                <option value="#"></option>
+                <option value="">Selecione</option>
                 <option value="Caneta">Caneta</option>
                 <option value="Clássico">Clássico</option>
                 <option value="Classineta">Classineta</option>
             </select>
 
-        <label for="ipt_email">Email:</label>
-        <input type="email" id="ipt_email" placeholder="exemplo@email.com">
+            <label>Email:</label>
+            <input type="email" id="ipt_email" placeholder="exemplo@email.com">
 
-        <label for="sel_empunhadura">Tipo de empunhadura:</label>
-        <select id="sel_empunhadura">
-            <option value="">Selecione</option>
-            <option value="Caneta">Caneta</option>
-            <option value="Classico">Clássico</option>
-            <option value="Classineta">Classineta</option>
-        </select>
 
-        <label for="ipt_senha">Senha:</label>
-        <input type="password" id="ipt_senha" placeholder="Digite sua senha">
 
-        <button onclick="cadastrar()">Cadastrar</button>
-    </div>
-</section>
+            <label>Senha:</label>
+            <input type="password" id="ipt_senha" placeholder="Digite sua senha">
+
+            <button onclick="cadastrar()">Cadastrar</button>
+
+        </div>
+
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
+    </section>
 
     <footer class="rodape">
         <div class="container">
@@ -64,7 +67,8 @@
             <p>Desenvolvido por João Pedro Santos Pinheiro</p>
         </div>
     </footer>
-    
+
 </body>
 <script src="../js/cadastro.js"></script>
+
 </html>

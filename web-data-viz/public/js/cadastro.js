@@ -76,7 +76,7 @@ function cadastrar() {
           "Cadastro realizado com sucesso! Redirecionando para tela de login...";
 
         setTimeout(() => {
-          window.location = "login.html";
+          window.location = "../pages/login.html";
         }, "2000");
 
         limparFormulario();
