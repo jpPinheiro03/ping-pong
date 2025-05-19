@@ -25,29 +25,30 @@
     </header>
     
 
-    <section>
-        <div class="cadastro_login">
-            <label for="ipt_nome">Insira seu nome:</label>
-            <input type="text" id="ipt_nome">
+    <section class="sessao-cadastro">
+    <div class="formulario-cadastro">
+        <h2>Crie sua Conta</h2>
 
-            <label for="ipt_email">Insira seu email:</label>
-            <input type="text" id="ipt_email">
-                
-            <label>Seu tipo de empunhadura:</label>
-            <select id="sel_empunhadura">
-                <option value="#"></option>
-                <option value="Caneta">Caneta</option>
-                <option value="Classico">Clássico</option>
-                <option value="Classineta">Classineta</option>
-            </select>
+        <label for="ipt_nome">Nome:</label>
+        <input type="text" id="ipt_nome" placeholder="Digite seu nome completo">
 
-            <label for="ipt_senha">Insira uma senha :</label>
-            <input type="password" id="ipt_senha">
-            
-            
-            <button onclick="cadastrar()">Cadastrar</button>
-        </div>
-    </section>
+        <label for="ipt_email">Email:</label>
+        <input type="email" id="ipt_email" placeholder="exemplo@email.com">
+
+        <label for="sel_empunhadura">Tipo de empunhadura:</label>
+        <select id="sel_empunhadura">
+            <option value="">Selecione</option>
+            <option value="Caneta">Caneta</option>
+            <option value="Classico">Clássico</option>
+            <option value="Classineta">Classineta</option>
+        </select>
+
+        <label for="ipt_senha">Senha:</label>
+        <input type="password" id="ipt_senha" placeholder="Digite sua senha">
+
+        <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+</section>
 
     <footer class="rodape">
         <div class="container">

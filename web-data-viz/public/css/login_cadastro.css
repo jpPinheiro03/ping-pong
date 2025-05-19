@@ -112,11 +112,78 @@ section{
   height: var(--tamanho-banner);
 }
 
-
-
 .cadastro_login{
   height: auto;
   width: auto;
   border-radius: 30%;
   text-align: center;
 }
+
+
+.sessao-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+}
+
+/* Estilo da div que contém o formulário */
+.formulario-cadastro {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-cadastro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+/* Labels */
+.formulario-cadastro label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Inputs e select */
+.formulario-cadastro input,
+.formulario-cadastro select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+/* Botão */
+.formulario-cadastro button {
+    background-color: #e63946;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-cadastro button:hover {
+    background-color: #d62839;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .formulario-cadastro {
+        padding: 30px 20px;
+    }
+}
+
+

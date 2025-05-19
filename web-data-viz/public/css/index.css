@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 :root {
   --tamanho-header: 80px;
@@ -136,4 +139,124 @@ section{
   color: black;
   text-align: center;
   height: var(--banner);
+  
+}
+
+
+.regras {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.regras h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #e63946; /* vermelho esportivo */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.regras ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.regras ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.regras ul li::before {
+    content: "🏓";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Estilo para seção de história */
+.historia {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    color: #222;
+}
+
+.historia h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1d3557; /* azul escuro */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.conteudo-historia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.texto-historia {
+    flex: 1 1 45%;
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.imagem-historia {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.imagem-historia img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .conteudo-historia {
+        flex-direction: column;
+    }
+
+    .texto-historia, .imagem-historia {
+        flex: 1 1 100%;
+    }
+
+    .regras ul li {
+        font-size: 1em;
+    }
+
+    .regras h2, .historia h2 {
+        font-size: 1.6em;
+    }
+}
+
+.separador {
+    height: 4px;
+    background: linear-gradient(to right, #e63946);
+    width: 80%;
+    margin: 0 auto 60px auto;
+    border-radius: 2px;
+}
+
+.divisor-nav {
+    width: 2px;
+    height: 35px;
+    background-color: #ccc;
+    margin: 0 10px;
+    display: inline-block;
 }

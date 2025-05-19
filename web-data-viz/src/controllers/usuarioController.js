@@ -12,7 +12,7 @@ function autenticar(req, res) {
     } 
     else {
 
-        montadoraModel.autenticar(email, senha)
+        usuarioModel.autenticar(email, senha)
             .then(
                 function (resultadoAutenticar) {
                     console.log(`\nResultados encontrados: ${resultadoAutenticar.length}`);
