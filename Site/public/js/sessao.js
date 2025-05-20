@@ -4,7 +4,7 @@ function validarSessao() {
     var nome = sessionStorage.NOME_USER;
 
 
-    if (email != null && nome != null) {
+    if (email == null && nome == null) {
         window.location = "login.html";
     }
 }
