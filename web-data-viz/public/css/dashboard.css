@@ -67,7 +67,7 @@ html {
 header {
     position: sticky;
     top: 0;
-    background-color: var(--corFundoBody);
+    background-color: #121212;
     display: flex;
     align-items: center;
 
@@ -118,7 +118,7 @@ a:hover {
         width: 2rem;
         height: 0.3rem;
         margin-bottom: 0.6rem;
-        background-color: var(--corTexto);
+        background-color: white;
         border-radius: 0.2rem;
         transition: all 0.2s ease-in-out;
     }
@@ -155,7 +155,7 @@ a:hover {
     width: 20%;
     height: 100vh;
     padding-top: 6.25rem;
-    background-color: var(--corTextoForm2);
+    background-color: #121212;
     margin-left: -20%;
     transition: all 0.2s ease-in-out;
 }
