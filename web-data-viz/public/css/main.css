@@ -13,10 +13,6 @@ html{
   --banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #000;
@@ -259,3 +255,4 @@ section{
     margin: 0 10px;
     display: inline-block;
 }
+

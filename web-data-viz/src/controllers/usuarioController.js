@@ -66,7 +66,7 @@ function cadastrar(req, res) {
     else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        montadoraModel.cadastrar(nome,empunhadura,email,senha)
+        usuarioModel.cadastrar(nome,empunhadura,email,senha)
             .then(
                 function (resultado) {
                     res.json(resultado);
