@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --tamanho-header: 80px;
+  --tamanho-footer: 90px;
+  --banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+
+.jogadores{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.fav_jg{
+    background-color: white;
+    color: black;
+}
+
+.texto_jg{
+    font-family: 'Times New Roman', Times, serif;
+}

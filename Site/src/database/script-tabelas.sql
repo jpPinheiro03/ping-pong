@@ -1,5 +1,4 @@
 CREATE DATABASE Pong;
-
 USE Pong;
 
 CREATE TABLE usuario (
@@ -12,6 +11,11 @@ CREATE TABLE usuario (
 );
 
 
-
-
+CREATE TABLE quiz (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    acertos INT,
+    tempo DATETIME,
+    fkusuario int,
+    FOREIGN KEY (fkusuario) REFERENCES usuario(id)
+    );
 
