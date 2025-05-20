@@ -17,5 +17,5 @@ CREATE TABLE quiz (
     tempo DATETIME,
     fkusuario int,
     FOREIGN KEY (fkusuario) REFERENCES usuario(id)
-    );
+);
 
