@@ -3,8 +3,9 @@ var quizModel = require("../models/quizModel");
 
 function enviar(req,res) {
     var acertos = req.body.certasServer;
+    var idUsuario = req.body.idUsuario;
 
-        quizModel.enviar(acertos)
+        quizModel.enviar(acertos,idUsuario)
             .then(
                 function (resultado) {
                     res.json(resultado);
