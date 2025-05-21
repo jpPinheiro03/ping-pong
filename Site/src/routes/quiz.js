@@ -7,6 +7,7 @@ var quizController = require("../controllers/quizController");
 router.post("/registrar", function (req, res) {
     quizController.cadastrar(req, res);
 })
+
 router.post("/enviar", function (req, res) {
     quizController.enviar(req, res);
 });

@@ -42,7 +42,7 @@ function entrar() {
                 });
 
                 setTimeout(function () {
-                    window.location = "dashboards.html";
+                    window.location = "Painel.html";
                 }, 1000);
 
             } else {

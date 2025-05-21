@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Modelos - OilSense </title>
-    <link rel="shortcut icon" href="../img/logo/logoIcone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/Favoritar.css">
-    <script src="../js/sessão.js"></script>
+    <title> Dashboards - OilSense </title>
+    <link rel="stylesheet" href="../css/Painel.css">
+    <script src="../js/sessao.js"></script>
 </head>
+
 <body onload="validarSessao()">
     <header class="escuro">
         <section class="container">
-            
+
             <nav class="menu">
                 <input type="checkbox" name="chk_hamburguer" id="chk_hamburguer" class="check_hamburguer">
 
@@ -21,55 +21,47 @@
                     <span></span>
                     <span></span>
                 </section>
-               <ul>
+                <ul>
                     <li>
-                        <a href="Painel.html"> Painel </a>
+                          <a href="quiz.html"> Quiz </a>
                     </li>
-
+                    
                     <li>
                         <a href="dashboards.html"> Dashboard </a>
                     </li>
                     <li>
-                        <a href="funcionarios.html"> Rank </a>
+                        <a href="Rank.html"> Rank </a>
                     </li>
                     <li>
-                        <a href="modelos.html"> Quiz </a>
+                        <a href="Favoritar.html"> Favoritar </a>
                     </li>
                     <li>
                         <a onclick="limparSessao()"> Sair </a>
                     </li>
                 </ul>
             </nav>
+
+            <main class="escuro">
+
+                
+            </main>
             <span></span>
         </section>
     </header>
 
 
-    <section class="fav_jg">
-        <div>
-            <img src="../assets/imgs/sun yingsha.jpg" class="jogadores">
-        </div>
-        <div class="nome">${}</div>
-
-        <div class="texto_jg">
-            <span>
-                <p>olá</p>
-            </span>
-        </div>
+    <section>
+        
     </section>
 
-    
+   
 
     <footer class="escuro">
-        <p>&copy; 2025 OilSense - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Ping-Pong-Life. Todos os direitos reservados.</p>
+        <p>Desenvolvido por João Pedro Santos Pinheiro</p>
     </footer>
 </body>
 
-<script src=""></script>
+<script src="../js/graficos.js"></script>
 
-<script>
-    document.getElementById("botao_modelo").onclick = function () {
-        location.href = "add_modelo.html";
-    };
-</script>
 </html>
