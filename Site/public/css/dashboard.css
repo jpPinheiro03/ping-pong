@@ -208,3 +208,28 @@ footer .rodape a {
     padding: 15px 0; 
   }
 }
+
+
+.dash {
+  width: 60%;
+  position: relative;
+  top: 0;
+  left: 20%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.btns-dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  padding: 0 30% 0 30%;
+}
+
+.graph {
+  width: 50%;
+  margin: auto;
+  padding-top: 10px;
+}

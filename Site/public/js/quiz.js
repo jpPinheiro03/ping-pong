@@ -207,6 +207,7 @@ function entrar() {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
+            erradasServer: erradas,
             certasServer: certas,
             idUsuario: sessionStorage.ID_USER,
         }),

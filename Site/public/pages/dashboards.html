@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dashboards - OilSense </title>
     <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/sessao.js"></script>
     <script src="../js/dashboard.js"></script>
 </head>
 
-<body onload="validarSessao()">
+<body onload="validarSessao(),listar()">
     <header class="escuro">
         <section class="container">
 
@@ -46,12 +47,19 @@
         </section>
     </header>
 
+     <div class="dash">
+            <div id="alerta">
+            </div>
+            <div class="btns-dash" id="btnAquario">
+            </div>
+            <div id="graficos">
+            </div>
+        </div>
+
 
     <section>
          <div id="pontuacaoEJogo"></div>
     </section>
-
-    <button onclick="listar()">Listar resultado</button>
    
 
     <footer class="escuro">

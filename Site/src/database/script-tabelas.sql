@@ -14,6 +14,7 @@ CREATE TABLE usuario (
 CREATE TABLE quiz (
 	id INT PRIMARY KEY AUTO_INCREMENT,
     acertos INT,
+	erradas INT,
     tempo DATETIME,
     fkusuario int,
     FOREIGN KEY (fkusuario) REFERENCES usuario(id)
