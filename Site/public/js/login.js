@@ -62,3 +62,8 @@ function entrar() {
         return false;
 
 }
+
+
+function pagina1(){
+    window.location = "pagina1.html";
+}
