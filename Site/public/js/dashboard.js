@@ -127,3 +127,24 @@ function obterDadosGrafico(idUsuario) {
 
 
 
+
+
+    function listarEmpunhadura() {
+    fetch(`/dash/listarEmpunhadura`)
+    .then(function (resposta) {
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
+             console.log("resposta passou ok: ", resposta);
+        } else {
+            alert("Houve um erro ao tentar puxar os dados!");
+        }
+    })
+    .catch(function (erro) {
+        console.error("#ERRO: ", erro);
+        alert("Erro ao comunicar com o servidor.");
+    });
+
+    return false;
+}
+
