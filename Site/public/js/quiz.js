@@ -22,9 +22,9 @@ const listaDeQuestoes = [
         pergunta: "Quantos tipos de efeitos básicos são possíeveis em um saque?",
         alternativaA: "Dez",
         alternativaB: "Quatro",
-        alternativaC: "Cinco",
-        alternativaD: "Seis",
-        alternativaCorreta: "alternativaC"
+        alternativaC: "Seis",
+        alternativaD: "Cinco",
+        alternativaCorreta: "alternativaD"
     },
 
     {
@@ -32,16 +32,17 @@ const listaDeQuestoes = [
         alternativaA: "Wang Chunchin",
         alternativaB: "Fan Zhendong",
         alternativaC: "Ma Long",
+        alternativaD: "Wang Chunchin",
         alternativaCorreta: "alternativaC"
     },
 
     {
-        pergunta: "Quantos tipos de efeitos básicos são possíeveis em um saque?",
-        alternativaA: "Dez",
-        alternativaB: "Quatro",
-        alternativaC: "Cinco",
-        alternativaD: "Seis",
-        alternativaCorreta: "alternativaC"
+        pergunta: "Em qual nível da competição os jogos passam as er MD7?",
+        alternativaA: "Finais",
+        alternativaB: "Quartas de Finais",
+        alternativaC: "Semi-Finais",
+        alternativaD: "Oitas de Finais",
+        alternativaCorreta: "alternativaB"
     },
 
 ]
@@ -71,7 +72,7 @@ function iniciarQuiz() {
 
     btnSubmeter.disabled = false
     btnProx.disabled = true
-    // btnConcluir.disabled = true
+  
     btnFim.disabled = true
 }
 
@@ -134,7 +135,7 @@ function avancar() {
 
     desmarcarRadioButtons()
 
-    if (numeroDaQuestaoAtual < quantidadeDeQuestoes - 1) {
+    if (numeroDaQuestaoAtual < quantidadeDeQuestoes) {
     preencherHTMLcomQuestaoAtual(numeroDaQuestaoAtual);
 } else {
     document.getElementById("btnFim").disabled = false;
