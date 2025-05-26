@@ -129,22 +129,69 @@ function obterDadosGrafico(idUsuario) {
 
 
 
-    function listarEmpunhadura() {
+function listarEmpunhadura() {
     fetch(`/dash/listarEmpunhadura`)
-    .then(function (resposta) {
-        console.log("resposta: ", resposta);
-
-        if (resposta.ok) {
-             console.log("resposta passou ok: ", resposta);
-        } else {
-            alert("Houve um erro ao tentar puxar os dados!");
-        }
-    })
-    .catch(function (erro) {
-        console.error("#ERRO: ", erro);
-        alert("Erro ao comunicar com o servidor.");
-    });
+        .then(function (resposta) {
+            if (resposta.ok) {
+                resposta.json().then(function (dados) {
+                    console.log("Dados de empunhadura:", dados);
+                    plotarGraficoEmpunhadura(dados[0]);
+                });
+            } else {
+                alert("Houve um erro ao tentar puxar os dados!");
+            }
+        })
+        .catch(function (erro) {
+            console.error("#ERRO: ", erro);
+            alert("Erro ao comunicar com o servidor.");
+        });
 
     return false;
 }
 
+function plotarGraficoEmpunhadura(dados) {
+    console.log('Plotando gráfico de empunhadura com os dados:', dados);
+
+    let labels = ['Clássico', 'Caneta', 'Classineta'];
+    let valores = [dados.classico, dados.caneta, dados.classineta];
+
+    const config = {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Quantidade de jogadores',
+                data: valores,
+                backgroundColor: [
+                    'rgb(255, 159, 64)',
+                    'rgb(54, 162, 235)',
+                    'rgb(153, 102, 255)'
+                ],
+                borderColor: [
+                    'rgb(255, 159, 64)',
+                    'rgb(54, 162, 235)',
+                    'rgb(153, 102, 255)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    precision: 0
+                }
+            }
+        }
+    };
+
+  
+    document.getElementById("graficoEmpunhadura").classList.remove("display-none");
+    document.getElementById("graficoEmpunhadura").classList.add("display-block");
+
+    // Criar o gráfico
+    new Chart(
+        document.getElementById('graficoEmpunhaduraCanvas'),
+        config
+    );
+}
