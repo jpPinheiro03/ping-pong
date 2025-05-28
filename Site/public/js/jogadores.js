@@ -1,0 +1,8 @@
+function atualizarVotacaoAdicao() {
+
+}
+
+function atualizarVotacaoSub() {
+
+}
+
