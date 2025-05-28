@@ -185,6 +185,13 @@ function plotarGraficoEmpunhadura(dados) {
         }
     };
 
+    console.log('----------------------------------------------')
+        console.log('O gráfico será plotado com os respectivos valores:')
+        console.log('Labels:')
+        console.log(labels)
+        console.log('Dados:')
+        console.log(dados.datasets)
+        console.log('----------------------------------------------')
   
     document.getElementById("graficoEmpunhadura").classList.remove("display-none");
     document.getElementById("graficoEmpunhadura").classList.add("display-block");

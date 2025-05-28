@@ -6,4 +6,6 @@ var dashController = require("../controllers/dashController");
 
 router.get("/listarEmpunhadura", dashController.listarEmpunhadura);
 
+router.push("/")
+
 module.exports = router;
