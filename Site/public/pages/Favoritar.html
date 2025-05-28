@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Modelos - OilSense </title>
-    <link rel="shortcut icon" href="../img/logo/logoIcone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/Favoritar.css">
-    <script src="../js/sessão.js"></script>
+    <title>Ping-Pong-Life | Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp"
+        type="image/x-icon">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="../css/paises.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="../js/sessao.js"></script>
+
 </head>
+
 <body onload="validarSessao()">
-    <header class="escuro">
-        <section class="container">
-            
+
+
+
+    <header>
+        <div class="container">
             <nav class="menu">
                 <input type="checkbox" name="chk_hamburguer" id="chk_hamburguer" class="check_hamburguer">
 
@@ -21,7 +33,7 @@
                     <span></span>
                     <span></span>
                 </section>
-               <ul>
+                <ul>
                     <li>
                         <a href="Painel.html"> Painel </a>
                     </li>
@@ -30,29 +42,58 @@
                         <a href="dashboards.html"> Dashboard </a>
                     </li>
                     <li>
-                        <a href="Rank.html"> Rank </a>
+                        <a href="Rank.html"> Rank  </a>
                     </li>
                     <li>
-                        <a href="quiz.html"> Quiz </a>
+                        <a href="Favoritar.html"> Favoritar </a>
                     </li>
                     <li>
                         <a onclick="limparSessao()"> Sair </a>
                     </li>
                 </ul>
             </nav>
-            <h1>Favoritar</h1>
-            <span></span>
-        </section>
+
+              <h1>Favoritar</h1>
+        
+            </nav>
+        </div>
     </header>
 
 
-    <section class="fav_jg">
-    </section>
 
-    
-    <footer class="escuro">
-        <p>&copy; 2025 Ping-Pong-Life. Todos os direitos reservados.</p>
-    </footer>
+
+    <div class="background_olimpico">
+        <div class="paises">
+            <div class="card">
+                <img src="../assets/paises/brasil.png">
+                <h1>Brasil</h1>
+            </div>
+
+            <div class="card">
+                <img src="../assets/paises/china.png">
+                <h1>China</h1>
+            </div>
+
+            <div class="card">
+                <img src="../assets/paises/franca.png">
+                <h1>França</h1>
+            </div>
+
+            <div class="card">
+                <img src="../assets/paises/japao.png">
+                <h1>Japão</h1>
+            </div>
+
+
+            <div class="card">
+                <img src="../assets/paises/suecia.png">
+                <h1>Suécia</h1>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
-<script></script>
+
 </html>

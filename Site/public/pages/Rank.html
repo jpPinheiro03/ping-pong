@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../js/rank.js"></script>
+    <link rel="stylesheet" href="../css/rank.css">
 </head>
-<body onload="listarJogadores()">
 
-    
-    
+<body onload="listarJogadores()">
+    <header>
+        <div class="container">
+            <nav class="menu">
+                <input type="checkbox" name="chk_hamburguer" id="chk_hamburguer" class="check_hamburguer">
+
+                <section class="hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </section>
+                <ul>
+                    <li>
+                        <a href="Painel.html"> Painel </a>
+                    </li>
+
+                    <li>
+                        <a href="dashboards.html"> Dashboard </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html"> Rank </a>
+                    </li>
+                    <li>
+                        <a href="Favoritar.html"> Favoritar </a>
+                    </li>
+                    <li>
+                        <a onclick="limparSessao()"> Sair </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>Rank</h1>
+        </div>
+    </header>
+
+
+    <div id="rank" class="rank-container"></div>
 </body>
+
 </html>

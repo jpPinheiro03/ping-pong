@@ -1,25 +1,27 @@
-
-function listarJogadores(){
+function listarJogadores() {
     fetch(`/favoritos/listarJogadores`)
-        .then(function (resposta) {
-            if (resposta.ok) {
-                resposta.json().then(function (dados) {
-                    console.log("Dados dos Jogadores", dados);
-                });
-            } else {
-                alert("Houve um erro ao tentar puxar os dados!");
-            }
+        .then(res => res.json())
+        .then(dados => {
+            const container = document.getElementById("rank");
+            container.innerHTML = ""; // limpa antes
+
+            dados.forEach(jogador => {
+                container.innerHTML += `
+                    <div class="linha">
+                        <span><strong>Nome:</strong> ${jogador.nome}</span>
+                        <span><strong>Ranking:</strong> #${jogador.ranking}</span>
+                        <span><strong>País:</strong> ${jogador.pais}</span>
+                        <span><strong>Pontos:</strong> ${jogador.pontos}</span>
+                        <span><strong>Votação:</strong> ${jogador.votacao}</span>
+                    </div>
+                `;
+            });
         })
-        .catch(function (erro) {
-            console.error("#ERRO: ", erro);
-            alert("Erro ao comunicar com o servidor.");
+        .catch(erro => {
+            console.error("Erro:", erro);
+            alert("Erro ao carregar os dados.");
         });
-
-    return false;
-    
-
 }
-
 
 
 

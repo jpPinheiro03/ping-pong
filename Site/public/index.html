@@ -4,74 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ping-Pong-Life</title>
+    <title>Ping-Pong-Life | Home</title>
+    <link rel="shortcut icon" href="assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon"
-        href="assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp"
-        type="image/x-icon">
-    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
     <header>
         <div class="container">
-            <img src="assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo"
-                alt="Logo Ping Pong">
-            <h1>W.T.T</h1>
+
+            <a href="index.html"><img src="assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp" class="logo" alt="Logo Ping Pong"></a>
+
+            <h1>Ping-Pong Life</h1>
+        
             <nav class="navegacao">
                 <ul>
-                    <li><a href="#regas">Regras</a></li>
                     <li><a href="#historia">História</a></li>
-                    <li class="divisor-nav"></li>
-                    <li><a href="pages/cadastro.html">Cadastrar</a></li>
-                    <li><a href="pages/login.html">Login</a></li>
+                    <li><a href="#regras">Regras</a></li>
                 </ul>
+
+                <button class="botao-cadastro" onclick="irCadastro()">
+                    Cadastrar
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>         
+                </button>
+
+                <button class="botao-login" onclick="irLogin()">Login</button>
+
             </nav>
         </div>
     </header>
 
     <div class="banner">
         <p>
-            O site com as maiores nóticias do momento sobre os melhores jogadores
-            e as melhores partidas do mundo do Tênis de mesa!
+            Velocidade. Precisão. Paixão!
         </p>
     </div>
 
-<div class="separador"></div>
 
 
-    <section id="regas" class="regras">
-    <div class="container">
-        <h2>Regras do Tênis de Mesa</h2>
-        <ul>
-            <li>O jogo é disputado até 11 pontos. O jogador precisa vencer com pelo menos 2 pontos de diferença.</li>
-            <li>Cada jogador realiza dois saques consecutivos, alternando em seguida.</li>
-            <li>A bola deve quicar no seu lado da mesa antes de ultrapassar para o lado do adversário no saque.</li>
-            <li>Não é permitido tocar na mesa com a mão livre durante o jogo.</li>
-            <li>O jogo pode ser individual ou em duplas, com regras específicas para cada formato.</li>
-        </ul>
-    </div>
-</section>
-
-<div class="separador"></div>
-
-
-<section id="historia" class="historia">
-    <div class="container">
-        <h2>História do Tênis de Mesa</h2>
-        <div class="conteudo-historia">
-            <div class="texto-historia">
+    <div class="intro"> 
+        <div id="historia" class="historia">
+            <div class="historia_comeco">
+                <h1>A HISTÓRIA DO <br> TÊNIS DE MESA</h1>
                 <p>
-                    O tênis de mesa, também conhecido como ping-pong, surgiu na Inglaterra no final do século XIX como uma forma recreativa da elite britânica. 
-                    Com o tempo, se desenvolveu como esporte competitivo e, atualmente, é uma modalidade olímpica com grande popularidade especialmente na Ásia.
+                    O tênis de mesa, ou pingue-pongue, surgiu na Inglaterra no século XIX como uma adaptação indoor do tênis, usando
+                    materiais improvisados (livros como rede, rolhas de garrafa como bolas).
                 </p>
             </div>
-            <div class="imagem-historia">
-                <img src="assets/imgs/historia-do-tenis-de-mesa.jpg" alt="Imagem histórica do tênis de mesa">
-            </div>
+            <div class="imgs_historia"><img src="assets/tenis-de-mesa-historia.jpg"></div>
         </div>
     </div>
-</section>
+
+
+
+
+    <div class="intro">
+        <div id="historia" class="historia">
+            <div class="imgs_historia">
+                <img src="assets/raquete-historia.jpg">
+            </div>
+            <div class="historia_fim">
+                
+                <h1>Mais de um Século de Emoção e Técnica na Mesa!</h1>
+
+                  <ul>
+                    <li>A popularidade do esporte cresceu rapidamente, levando à necessidade de padronização dos equipamentos e das regras.</li>
+                    <li>Em 1926 foi fundada a International Table Tennis Federation (ITTF), principal entidade reguladora do esporte.</li>
+                    <li>No mesmo ano, ocorreu o primeiro Campeonato Mundial de Tênis de Mesa, em Londres.</li>
+                    <li>A partir da década de 1950, o desenvolvimento de novos materiais para raquetes, como a borracha com esponja,
+                    revolucionou o esporte, aumentando a velocidade e os efeitos aplicados à bola.</li>
+                    <li>O tênis de mesa estreou como esporte olímpico nos Jogos Olímpicos de Seul, em 1988, consolidando sua importância global.</li>
+                  </ul>
+            </div>
+        
+        </div>
+    </div>
+
+    <div id="regras" class="background">
+        <div class="content-box">
+            <h1>Regras do jogo!</h1>
+            <ul>
+                <li>Objetivo: Marcar 11 pontos antes do adversário, com ao menos 2 pontos de diferença.</li>
+                <li>Um sorteio define quem saca primeiro.</li>
+                <li>O saque deve ser feito com a bola na palma da mão, lançada para cima e batida atrás da linha de base.</li>
+                <li>A cada 2 pontos, troca-se o sacador.</li>
+                <li>No empate de 10 a 10 ("deuce"), o saque alterna a cada ponto.</li>
+                <li>Normalmente, quem vencer 3 ou 4 sets primeiro (dependendo do torneio) vence a partida.</li>
+            </ul>
+            
+
+        </div>
+    </div>
+   
 
 
     <footer class="rodape">
@@ -81,4 +117,31 @@
         </div>
     </footer>
 </body>
+<script>
+    function irLogin(){
+        window.location = "/pages/login.html"
+    }
+
+    function irCadastro(){
+        window.location = "/pages/cadastro.html"
+    }
+
+
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            header.style.top = '-155px'; 
+        } else {
+           
+            header.style.top = '0';
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+    }, false);
+</script>
+
 </html>
