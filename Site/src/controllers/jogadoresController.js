@@ -2,7 +2,7 @@
 var jogadoresModel = require("../models/jogadoresModel");
 
 function listarJogadores(req, res) {
-    dashModel.listarEmpunhadura()
+    jogadoresModel.listarJogadores()
         .then(function (resultado) {
             if (resultado.length > 0) {
                 res.status(200).json(resultado);
@@ -17,7 +17,13 @@ function listarJogadores(req, res) {
         });
 }
 
+function atualizarVotacaoAdicao(){
 
+}
+
+function atualizarVotacaoSub(){
+
+}
 
 
 
