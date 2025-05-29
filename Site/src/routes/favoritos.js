@@ -6,9 +6,9 @@ var jogadoresController = require("../controllers/jogadoresController");
 
 router.get("/listarJogadores", jogadoresController.listarJogadores);
 
-router.put("/atualizarVotacaoAdicao",jogadoresController.atualizarVotacaoAdicao);
+router.put("/atualizarVotacaoAdicao", jogadoresController.atualizarVotacaoAdicao);
 
-router.put("/atualizarVotacaoSub",jogadoresController.atualizarVotacaoSub);
+router.put("/atualizarVotacaoSub", jogadoresController.atualizarVotacaoSub);
 
 
 

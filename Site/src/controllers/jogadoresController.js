@@ -17,12 +17,20 @@ function listarJogadores(req, res) {
         });
 }
 
-function atualizarVotacaoAdicao(){
+function atualizarVotacaoAdicao(req, res) {
+    const { idJogador } = req.body;
 
+    jogadoresModel.atualizarVotacaoAdicao(idJogador)
+        .then(() => res.status(200).send("Voto adicionado"))
+        .catch(erro => res.status(500).json(erro));
 }
 
-function atualizarVotacaoSub(){
+function atualizarVotacaoSub(req, res) {
+    const { idJogador } = req.body;
 
+    jogadoresModel.atualizarVotacaoSub(idJogador)
+        .then(() => res.status(200).send("Voto removido"))
+        .catch(erro => res.status(500).json(erro));
 }
 
 

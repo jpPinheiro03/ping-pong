@@ -30,6 +30,9 @@ function atualizarVotacaoSub(idJogador){
     return database.executar(instrucaoSql);
 }
 
+
+
+
 module.exports = {
     listarJogadores,
     atualizarVotacaoAdicao,
