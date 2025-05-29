@@ -73,7 +73,7 @@ function iniciarQuiz() {
     btnSubmeter.disabled = false
     btnProx.disabled = true
   
-    btnFim.disabled = true
+    btnFim.style.display = 'none'
 }
 
 function preencherHTMLcomQuestaoAtual(index) {
@@ -145,21 +145,19 @@ function avancar() {
 }
 
 function checarResposta() {
-    const questaoAtual = listaDeQuestoes[numeroDaQuestaoAtual] // questão atual 
-    const respostaQuestaoAtual = questaoAtual.alternativaCorreta // qual é a resposta correta da questão atual
+    const questaoAtual = listaDeQuestoes[numeroDaQuestaoAtual] 
+    const respostaQuestaoAtual = questaoAtual.alternativaCorreta 
 
-    const options = document.getElementsByName("option"); // recupera alternativas no html
+    const options = document.getElementsByName("option"); 
 
-    let alternativaCorreta = null // variável para armazenar a alternativa correta
+    let alternativaCorreta = null 
 
     options.forEach((option) => {
         if (option.value === respostaQuestaoAtual) {
-            console.log("alternativaCorreta está no componente: " + alternativaCorreta)
             alternativaCorreta = option.labels[0].id
         }
     })
 
-    // verifica se resposta assinalada é correta
     options.forEach((option) => {
         if (option.checked === true && option.value === respostaQuestaoAtual) {
             document.getElementById(alternativaCorreta).classList.add("text-success-with-bg")
@@ -178,6 +176,11 @@ function checarResposta() {
             numeroDaQuestaoAtual++
         }
     })
+
+  
+    if (numeroDaQuestaoAtual >= quantidadeDeQuestoes) {
+        finalizarQuiz()
+    }
 }
 
 function limparCoresBackgroundOpcoes() {
@@ -193,6 +196,20 @@ function desmarcarRadioButtons() {
     for (let i = 0; i < options.length; i++) {
         options[i].checked = false;
     }
+}
+
+
+function finalizarQuiz() {
+    // esconder quiz e controles
+    document.getElementById('jogo').style.display = 'none'
+    document.getElementById('btnProx').style.display = 'none'
+    document.getElementById('btnSubmeter').style.display = 'none'
+    document.getElementById('btnFim').style.display = 'none'
+
+    alert(`Quiz finalizado! Você acertou ${certas} de ${quantidadeDeQuestoes} questões.`)
+
+    entrar()
+    
 }
 
 

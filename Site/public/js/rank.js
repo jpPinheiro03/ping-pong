@@ -21,8 +21,11 @@ function listarJogadores() {
             console.error("Erro:", erro);
             alert("Erro ao carregar os dados.");
         });
-}
 
+    }
+    
+    listarJogadores();
+   setInterval(listarJogadores, 60000);
 
 
 
