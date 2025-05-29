@@ -81,7 +81,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: var(--tamanho-footer);
 }
 
 footer p {
@@ -199,6 +198,82 @@ section{
 #div_erros_login {
   display: none
 }
+
+
+ .botao-cadastro {
+            background: #ec2929;
+            color: rgb(255, 248, 248);
+            font-family: inherit;
+            padding: 0.35em;
+            padding-left: 1.2em;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 0.9em;
+            border: none;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            box-shadow: inset 0 0 1.6em -0.6em #ec2929;
+            overflow: hidden;
+            position: relative;
+            height: 2.8em;
+            padding-right: 3.3em;
+            cursor: pointer;
+        }
+    
+        .botao-cadastro .icon {
+            background: rgb(255, 224, 224);
+            margin-left: 1em;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.2em;
+            width: 2.2em;
+            border-radius: 0.7em;
+            box-shadow: 0.1em 0.1em 0.6em 0.2em #ec2929;
+            right: 0.3em;
+            transition: all 0.3s;
+        }
+    
+        .botao-cadastro:hover .icon {
+            width: calc(100% - 0.6em);
+        }
+    
+        .botao-cadastro .icon svg {
+            width: 1.1em;
+            transition: transform 0.3s;
+            color: #ec2929;
+        }
+    
+        .botao-cadastro:hover .icon svg {
+            transform: translateX(0.1em);
+        }
+    
+        .botao-cadastro:active .icon {
+            transform: scale(0.95);
+        }
+
+
+   .botao-sair {
+                background-color: #fefdf3;
+                color: #f6d43b;
+                border: none;
+                cursor: pointer;
+                border-radius: 0.9rem;
+                width: 100px;
+                height: 55px;
+                transition: 0.3s;
+                font-weight: 700;
+                font-size: 20px;
+        }
+
+        .botao-sair:hover{
+            background-color: #f6d43b;
+            box-shadow: 0 0 0 5px #f6ca3b5f;
+            color: #fff;
+        }
+
 
 
 

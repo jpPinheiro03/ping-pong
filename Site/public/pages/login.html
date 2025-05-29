@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon"
-    href="../assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp"
-    type="image/x-icon">
+        href="../assets/icon/5dfeaabdb2b59da0eb938e0436efb560-desenho-de-taco-de-tenis-de-mesa.webp"
+        type="image/x-icon">
     <link rel="stylesheet" href="../css/login_cadastro.css">
     <script src="../js/sessao.js"></script>
     <title>Cadastro</title>
@@ -20,8 +20,18 @@
             <h1>LOGIN</h1>
             <nav class="navegacao">
                 <ul>
-                    <li><a href="cadastro.html">Cadastrar</a></li>
-                    <li><a href="../index.html">Sair</a></li>
+                    <button class="botao-cadastro" onclick="irCadastro()">
+                        Cadastrar
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="botao-sair" onclick="sair()">Sair</button>
                 </ul>
         </div>
         </div>
@@ -37,9 +47,9 @@
             <input type="password" id="ipt_senha">
 
             <div id="div_aguardar" class="loading-div">
-                        <img src="../assets/circle-loading.gif" id="loading-gif">
-                    </div>
-                    <div id="div_erros_login"></div>
+                <img src="../assets/circle-loading.gif" id="loading-gif">
+            </div>
+            <div id="div_erros_login"></div>
 
             <button onclick="entrar()">Entrar</button>
         </div>
@@ -53,6 +63,17 @@
     </footer>
 
 </body>
+<script> 
+function irCadastro() {
+window.location = "/pages/cadastro.html"
+    }
+
+    function sair() {
+window.location = "../index.html"
+    }
+</script>
+
 <script src="../js/login.js"></script>
+
 
 </html>

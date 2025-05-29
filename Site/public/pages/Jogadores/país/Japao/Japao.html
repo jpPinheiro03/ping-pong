@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <script src="../../../../js/jogadores.js"></script>
+     <link rel="stylesheet" href="../../../jogadores.css">
 </head>
 <body>
-    <button onclick="favoritar(this)"data-id="4" data-favoritado="false">Favoritar Mima Ito!</button>
-    <button onclick="favoritar(this)"data-id="5" data-favoritado="false">Favoritar Miwa Harimoto!</button>
-    <button onclick="favoritar(this)"data-id="15" data-favoritado="false">Favoritar Tomukazu Harimoto!</button>
+    
+    <div class="background_japao">
+        <div class="jogadores_japao">
+            <a href="./mimaIto.html">
+                <div class="jogador">
+                    <img src="../../../img/gato.jpg">
+                    <h1>Mima Ito</h1>
+                    <button onclick="favoritar(this)"data-id="4" data-favoritado="false">Favoritar Mima Ito!</button>
+                </div>
+            </a>
+
+            <a href="./miwaHarimoto.html">
+                <div class="jogador">
+                    <img src="../../../img/gato.jpg">
+                    <h1>Miwa Harimoto</h1>
+                    <button onclick="favoritar(this)"data-id="5" data-favoritado="false">Favoritar Miwa Harimoto!</button>
+                </div>
+            </a>
+
+            <a href="./TomokazuHarimoto.html">
+                <div class="jogador">
+                    <img src="../../../img/gato.jpg">
+                    <h1>Tomokazu Harimoto</h1>
+                    <button onclick="favoritar(this)"data-id="15" data-favoritado="false">Favoritar Tomukazu Harimoto!</button>
+                </div>
+            </a>
+
+        </div>
+    </div>
 </body>
 </html>

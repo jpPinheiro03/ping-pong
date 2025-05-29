@@ -21,7 +21,7 @@
             <h1>Cadastro</h1>
             <nav class="navegacao">
                 <ul>
-                    <li><a href="../index.html">Sair</a></li>
+                    <button class="botao-sair" onclick="sair()">Sair</button>
                 </ul>
         </div>
     </header>
@@ -69,6 +69,11 @@
     </footer>
 
 </body>
+<script>
+    function sair() {
+        window.location = "../index.html"
+    }
+</script>
 <script src="../js/cadastro.js"></script>
 
 </html>

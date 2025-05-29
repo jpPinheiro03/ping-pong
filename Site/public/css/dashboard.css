@@ -186,7 +186,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: var(--tamanho-footer);
 }
 
 footer p {
@@ -232,4 +231,12 @@ footer .rodape a {
   width: 50%;
   margin: auto;
   padding-top: 10px;
+}
+
+#graficos{
+    width: 80%;
+}
+
+#grafico2{
+    justify-content:center;
 }
