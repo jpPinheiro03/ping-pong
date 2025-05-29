@@ -178,7 +178,7 @@ section{
     background-color: #d62839;
 }
 
-/* Responsivo */
+
 @media (max-width: 600px) {
     .formulario {
         padding: 30px 20px;

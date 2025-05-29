@@ -3,7 +3,7 @@ function listarJogadores() {
         .then(res => res.json())
         .then(dados => {
             const container = document.getElementById("rank");
-            container.innerHTML = ""; // limpa antes
+            container.innerHTML = ""; 
 
             dados.forEach(jogador => {
                 container.innerHTML += `

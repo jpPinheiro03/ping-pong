@@ -13,11 +13,15 @@ let idUsuario = sessionStorage.ID_USER;
             document.getElementById("graficos").innerHTML += `
                 <div id="grafico${idUsuario}" class="display-none">
                     <h3 class="tituloGraficos">
-                        <span id="tituloAquario${idUsuario}">${resposta[0].nome}</span>
-                    </h3>
+                        <span id="tituloAquario${idUsuario}">${resposta[0].nome} o restultado do seu quiz foi:</span>
+                        </h3>
+                        <h3><span id="tituloAquario${idUsuario}">Acertos: ${resposta[0].acertos}</span></h3>
+                        <h3><span id="tituloAquario${idUsuario}">Erros :${resposta[0].erradas}</span></h3>
+                        <h3><span id="tituloAquario${idUsuario}">Resultado : ${resposta[0].acertos * 10} pontos</span></h3>
                     <div class="graph">
                         <canvas id="myChartCanvas${idUsuario}"></canvas>
                     </div>
+                    <h2>Você pode tentar denovo para obter novos resultados!</h2>
                     <div class="label-captura">
                         <p id="avisoCaptura${idUsuario}" style="color: white"></p>
                     </div>
@@ -136,6 +140,10 @@ function listarEmpunhadura() {
                 resposta.json().then(function (dados) {
                     console.log("Dados de empunhadura:", dados);
                     plotarGraficoEmpunhadura(dados[0]);
+                    document.getElementById("textinho").innerHTML += `
+                     <h3><span> Exibindo quantidade de  empunhaduras por usúarios  </span></h3>
+                    `
+                    
                 });
             } else {
                 alert("Houve um erro ao tentar puxar os dados!");
@@ -160,7 +168,7 @@ function plotarGraficoEmpunhadura(dados) {
         data: {
             labels: labels,
             datasets: [{
-                label: 'Quantidade de jogadores',
+                label: `Valores`,
                 data: valores,
                 backgroundColor: [
                     'rgb(255, 159, 64)',
