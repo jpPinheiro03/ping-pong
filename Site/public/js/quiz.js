@@ -37,12 +37,46 @@ const listaDeQuestoes = [
     },
 
     {
-        pergunta: "Em qual nível da competição os jogos passam as er MD7?",
+        pergunta: "Em qual nível da competição os jogos passam a ser MD7?",
         alternativaA: "Finais",
         alternativaB: "Quartas de Finais",
         alternativaC: "Semi-Finais",
-        alternativaD: "Oitas de Finais",
+        alternativaD: "Oitavas de Finais",
         alternativaCorreta: "alternativaB"
+    },
+
+     {
+        pergunta: "Ma Long conseguiu quantos grand Slam em sequência na sua carreira?",
+        alternativaA: "2",
+        alternativaB: "1",
+        alternativaC: "3",
+        alternativaD: "0",
+        alternativaCorreta: "alternativaA"
+    },
+     {
+        pergunta: "Qual desses campeonatos vale mais pontos no ranking mundial?",
+        alternativaA: "WTT U.S.A",
+        alternativaB: "Copa do Mundo",
+        alternativaC: "Smash China",
+        alternativaD: "Mundial",
+        alternativaCorreta: "alternativaD"
+    },
+     {
+        pergunta: "Quem é a jogadora que as 12 anos abalou o cenário mundial com grandes conquistas?",
+        alternativaA: "Mima Ito",
+        alternativaB: "Miwa Harimoto",
+        alternativaC: "Chen Meng",
+        alternativaD: "Wang Manyu",
+        alternativaCorreta: "alternativaA"
+    },
+
+    {
+        pergunta: "Por quê os jogadores ao sacar batem o pé no chão?",
+        alternativaA: "Para distrair o oponente",
+        alternativaB: "Porque virou mania",
+        alternativaC: "Abafar o som do efeito na bola",
+        alternativaD: "Intimidar o oponente",
+        alternativaCorreta: "alternativaC"
     },
 
 ]
