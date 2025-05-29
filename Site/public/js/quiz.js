@@ -240,7 +240,7 @@ function finalizarQuiz() {
     document.getElementById('btnSubmeter').style.display = 'none'
     document.getElementById('btnFim').style.display = 'none'
 
-    alert(`Quiz finalizado! Você acertou ${certas} de ${quantidadeDeQuestoes} questões.`)
+    alert(`Quiz finalizado! Você acertou ${certas} de ${quantidadeDeQuestoes+1} questões.`)
 
     entrar()
     
