@@ -203,7 +203,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: var(--tamanho-footer);
 }
 
 footer p {
