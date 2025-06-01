@@ -25,20 +25,11 @@ function atualizarVotacaoAdicao(req, res) {
         .catch(erro => res.status(500).json(erro));
 }
 
-function atualizarVotacaoSub(req, res) {
-    const { idJogador } = req.body;
-
-    jogadoresModel.atualizarVotacaoSub(idJogador)
-        .then(() => res.status(200).send("Voto removido"))
-        .catch(erro => res.status(500).json(erro));
-}
-
 
 
 
 module.exports = {
     listarJogadores,
     atualizarVotacaoAdicao,
-    atualizarVotacaoSub,
 
 };

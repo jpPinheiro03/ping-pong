@@ -1,12 +1,7 @@
 function favoritar(botao) {
     const idJogador = botao.getAttribute("data-id");
-    const favoritado = botao.getAttribute("data-favoritado") === "true";
 
-const rota = favoritado
-    ? "http://localhost:3333/favoritos/atualizarVotacaoSub"
-    : "http://localhost:3333/favoritos/atualizarVotacaoAdicao";
-
-    fetch(rota, {
+    fetch("/favoritos/atualizarVotacaoAdicao", {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -16,18 +11,14 @@ const rota = favoritado
     .then(response => {
         if (response.ok) {
             const nome = botao.textContent.split(' ')[1];
-            botao.textContent = favoritado ? `Favoritar ${nome}` : `Desfavoritar ${nome}`;
-            botao.setAttribute("data-favoritado", (!favoritado).toString());
+            botao.textContent = `Votar novamente em ${nome}`;
         } else {
-            alert("Erro ao atualizar voto.");
+            alert("Erro ao registrar voto.");
         }
     })
     .catch(error => {
         console.error("Erro na requisição:", error);
     });
 }
-
-
-
 
 

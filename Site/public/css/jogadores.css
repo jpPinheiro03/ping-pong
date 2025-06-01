@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*BRASIL SIL SIL*/
+
+.background_brasil{
+    background-image: url('../assets/paises/brasil.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.jogadores_brasil{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(32, 32, 32, 0.85);
+        padding: 5%;
+        align-self: center;
+        margin: auto;
+        border-radius: 10px;
+}
+
+.jogadores_brasil .jogador{
+    width: fit-content;
+    background-color: rgb(168, 167, 153);
+    margin: 30px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    padding: 20px 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.jogador{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: aliceblue;
+}
+
+.jogador >img{
+    width: 300px;
+    margin: 10px;
+}
+
+
+.jogador:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(255, 253, 238);
+    color: rgb(31, 26, 3);
+}
+
+
+/*CHINA*/
+
+.background_china{
+    background-image: url('../assets/paises/china.png');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+}
+
+.jogadores_china {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(32, 32, 32, 0.85);
+    padding: 5%;
+    align-self: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.jogadores_china .jogador {
+    width: fit-content;
+    background-color: rgb(168, 167, 153);
+    margin: 30px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    padding: 20px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jogador {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: aliceblue;
+}
+
+.jogador>img {
+    width: 300px;
+    margin: 10px;
+}
+
+
+.jogador:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(255, 253, 238);
+    color: rgb(31, 26, 3);
+}
+
+/*FRANÇA*/
+
+.background_franca {
+    background-image: url('../assets/paises/franca.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.jogadores_franca {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(32, 32, 32, 0.85);
+    padding: 5%;
+    align-self: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.jogadores_franca .jogador {
+    width: fit-content;
+    background-color: rgb(168, 167, 153);
+    margin: 30px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    padding: 20px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jogador {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: aliceblue;
+}
+
+.jogador>img {
+    width: 300px;
+    margin: 10px;
+}
+
+
+.jogador:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(255, 253, 238);
+    color: rgb(31, 26, 3);
+}
+
+/*JAPÃO*/
+
+.background_japao {
+    background-image: url('../assets/paises/bandeira-japao.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.jogadores_japao {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(32, 32, 32, 0.85);
+    padding: 5%;
+    align-self: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.jogadores_japao .jogador {
+    width: fit-content;
+    background-color: rgb(168, 167, 153);
+    margin: 30px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    padding: 20px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jogador {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: aliceblue;
+}
+
+.jogador>img {
+    width: 300px;
+    margin: 10px;
+}
+
+
+.jogador:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(255, 253, 238);
+    color: rgb(31, 26, 3);
+}
+
+/*SUÉCIA*/
+
+.background_suecia{
+    background-image: url('../assets/paises/bandeira-da-suecia.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.jogadores_suecia {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(32, 32, 32, 0.85);
+    padding: 5%;
+    align-self: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.jogadores_suecia .jogador {
+    width: fit-content;
+    background-color: rgb(168, 167, 153);
+    margin: 30px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    padding: 20px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jogador {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: aliceblue;
+}
+
+.jogador>img {
+    width: 300px;
+    margin: 10px;
+}
+
+
+.jogador:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(255, 253, 238);
+    color: rgb(31, 26, 3);
+}
+
+
+
+#voltar{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+nav {
+    position: relative;
+}

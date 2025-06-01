@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <script src="../../../../js/jogadores.js"></script>
-     <link rel="stylesheet" href="../../../jogadores.css">
+    <script src="../../../../js/jogadores.js"></script>
+    <link rel="stylesheet" href="../../../../css/jogadores.css">
 </head>
+
 <body>
-    
+
     <div class="background_japao">
+         <nav>
+            <button onclick="voltar()" id="voltar">&#8592;</button>
+        </nav>
         <div class="jogadores_japao">
-            <a href="./mimaIto.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Mima Ito</h1>
-                    <button onclick="favoritar(this)"data-id="4" data-favoritado="false">Favoritar Mima Ito!</button>
-                </div>
-            </a>
+            <div class="jogador">
+                <img src="../../../../assets/imgs/mima ito.jpg">
+                <h1>Mima Ito</h1>
+                <button onclick="favoritar(this)" data-id="4" data-favoritado="false">Favoritar Mima Ito!</button>
+            </div>
 
-            <a href="./miwaHarimoto.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Miwa Harimoto</h1>
-                    <button onclick="favoritar(this)"data-id="5" data-favoritado="false">Favoritar Miwa Harimoto!</button>
-                </div>
-            </a>
 
-            <a href="./TomokazuHarimoto.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Tomokazu Harimoto</h1>
-                    <button onclick="favoritar(this)"data-id="15" data-favoritado="false">Favoritar Tomukazu Harimoto!</button>
-                </div>
-            </a>
+            <div class="jogador">
+                <img src="../../../../assets/imgs/miwa harimoto.jpg">
+                <h1>Miwa Harimoto</h1>
+                <button onclick="favoritar(this)" data-id="5" data-favoritado="false">Favoritar Miwa Harimoto!</button>
+            </div>
 
+            <div class="jogador">
+                <img src="../../../../assets/imgs/tomokazu.avif">
+                <h1>Tomokazu Harimoto</h1>
+                <button onclick="favoritar(this)" data-id="15" data-favoritado="false">Favoritar Tomukazu Harimoto!</button>
+            </div>
         </div>
     </div>
 </body>
+<script>
+
+
+    function voltar(){
+        window.location = "../../../Favoritar.html";
+    }
+</script>
+
 </html>

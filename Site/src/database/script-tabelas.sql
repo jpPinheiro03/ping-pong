@@ -39,7 +39,6 @@ CREATE TABLE jogadores (
 INSERT INTO jogadores (nome,ranking,pais,pontos,votacao)
 	values('Sun Yingsha',1,'China',11900,0),
 		  ('Chen Meng',0,'China',8800,0),
-		  ('Wang Manyu',2,'China',7200,0),
 		  ('Mima Ito',7,'Japão',3050,0),
 		  ('Miwa Harimoto',6,'Japão',3500,0),
 		  ('Bruna Takahashi',16,'Brasil',1420,0),

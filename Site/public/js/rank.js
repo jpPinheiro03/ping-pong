@@ -1,9 +1,21 @@
+
+
 function listarJogadores() {
     fetch(`/favoritos/listarJogadores`)
         .then(res => res.json())
         .then(dados => {
             const container = document.getElementById("rank");
-            container.innerHTML = ""; 
+            container.innerHTML = "";
+            container.innerHTML += `
+    <div class="rank-header">
+        <span>Nome</span>
+        <span>Ranking</span>
+        <span>País</span>
+        <span>Pontos</span>
+        <span>Votação</span>
+    </div>
+`;
+
 
             dados.forEach(jogador => {
                 container.innerHTML += `
@@ -22,10 +34,10 @@ function listarJogadores() {
             alert("Erro ao carregar os dados.");
         });
 
-    }
-    
-    listarJogadores();
-   setInterval(listarJogadores, 60000);
+}
+
+listarJogadores();
+setInterval(listarJogadores, 60000);
 
 
 

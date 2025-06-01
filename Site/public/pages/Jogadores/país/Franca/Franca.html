@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <script src="../../../../js/jogadores.js"></script>
-     <link rel="stylesheet" href="../../../jogadores.css">
+    <script src="../../../../js/jogadores.js"></script>
+    <link rel="stylesheet" href="../../../../css/jogadores.css">
 </head>
-<body>
-    
-    <div class="background_franca">
-        <div class="jogadores_franca">
-            <a href="./AlexLebrun.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Alex Lebrun</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)"data-id="12" data-favoritado="false">Favoritar Alexis Lebrun!</button>
 
-            <a href="./FelixLebron.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Felix Lebron</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)"data-id="13" data-favoritado="false">Favoritar Felix Lebrun !</button>
+<body>
+
+    <div class="background_franca">
+        <nav>
+            <button onclick="voltar()" id="voltar">&#8592;</button>
+        </nav>
+        <div class="jogadores_franca">
+            <div class="jogador">
+                <img src="../../../../assets/imgs/alexis.jpg">
+                <h1>Alex Lebrun</h1>
+                <button onclick="favoritar(this)" data-id="12" data-favoritado="false">Favoritar Alexis Lebrun!</button>
+            </div>
+
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/felix.webp">
+                <h1>Felix Lebron</h1>
+                <button onclick="favoritar(this)" data-id="13" data-favoritado="false">Favoritar Felix Lebrun !</button>
+            </div>
+
 
 
 
         </div>
     </div>
 </body>
+<script>
+
+
+    function voltar() {
+        window.location = "../../../Favoritar.html";
+    }
+</script>
+
+
 </html>

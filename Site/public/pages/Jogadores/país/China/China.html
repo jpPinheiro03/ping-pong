@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../../../js/jogadores.js"></script>
-    <link rel="stylesheet" href="../../../jogadores.css">
+    <link rel="stylesheet" href="../../../../css/jogadores.css">
 </head>
-<body>
-     <div class="background_china">
-        <div class="jogadores_china">
-            <a href="./ChenMeng.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Chen Meng</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)"data-id="2" data-favoritado="false">Favoritar  Chen Meng!</button>
 
-            <a href="./fanZhendon.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Fan Zhendon</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)"data-id="10" data-favoritado="false">Favoritar Fan Zhendong!</button>
-            
-            <a href="./MaLong.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Ma Long</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)"data-id="9" data-favoritado="false">Favoritar Ma Long!</button>
-            
-            <a href="./sasha.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Sun Yingsha</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)"data-id="1" data-favoritado="false">Favoritar  Sun Yingsha!</button>
-            
-            <a href="./WangChunchin.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Wang Chunchin</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)"data-id="8" data-favoritado="false">Favoritar Wang Chunqin!</button>
-            
+<body>
+    <div class="background_china">
+        <nav>
+            <button onclick="voltar()" id="voltar">&#8592;</button>
+        </nav>
+        <div class="jogadores_china">
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/chen.jpg">
+                <h1>Chen Meng</h1>
+                <button onclick="favoritar(this)" data-id="2" data-favoritado="false">Favoritar Chen Meng!</button>
+            </div>
+
+
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/fan zhendong.jpeg">
+                <h1>Fan Zhendon</h1>
+                <button onclick="favoritar(this)" data-id="10" data-favoritado="false">Favoritar Fan Zhendong!</button>
+            </div>
+
+
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/ma long.webp">
+                <h1>Ma Long</h1>
+                <button onclick="favoritar(this)" data-id="9" data-favoritado="false">Favoritar Ma Long!</button>
+            </div>
+
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/sun.png">
+                <h1>Sun Yingsha</h1>
+                <button onclick="favoritar(this)" data-id="1" data-favoritado="false">Favoritar Sun Yingsha!</button>
+            </div>
+
+
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/chun.avif">
+                <h1>Wang Chunchin</h1>
+                <button onclick="favoritar(this)" data-id="8" data-favoritado="false">Favoritar Wang Chunqin!</button>
+            </div>
         </div>
     </div>
-    <button onclick="favoritar(this)"data-id="3" data-favoritado="false">Favoritar  Wang Manyu!</button>
 </body>
+<script>
+
+
+    function voltar() {
+        window.location = "../../../Favoritar.html";
+    }
+</script>
+
 </html>

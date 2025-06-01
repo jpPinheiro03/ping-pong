@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="/Site/public/js/jogadores.js"></script>
-    <link rel="stylesheet" href="../../../jogadores.css">
+     <link rel="stylesheet" href="../../../../css/jogadores.css">
 </head>
 
 <body>
     <div class="background_suecia">
+         <nav>
+            <button onclick="voltar()" id="voltar">&#8592;</button>
+        </nav>
         <div class="jogadores_suecia">
-            <a href="./trulsMoregard.html">
                 <div class="jogador">
-                    <img src="">
+                    <img src="../../../../assets/imgs/truls.jpg">
                     <h1>Truls Moregard</h1>
+                    <button onclick="favoritar(this)" data-id="14" data-favoritado="false">Truls Moregard !</button>
                 </div>
-            </a>
-
         </div>
     </div>
-    <button onclick="favoritar(this)" data-id="14" data-favoritado="false">Truls Moregard !</button>
 
 
 </body>
+<script>
+    function voltar(){
+        window.location = "../../../Favoritar.html";
+    }
+</script>
 
 </html>

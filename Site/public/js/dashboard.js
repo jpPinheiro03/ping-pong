@@ -91,8 +91,8 @@ function obterDadosGrafico(idUsuario) {
             label: 'Quantidade:',
             data: [resposta[0].erradas,],
             backgroundColor: [
-                'rgb(255, 99, 99)',
-                'rgb(102, 235, 54)',
+                'rgb(231, 27, 27)',
+                'rgb(46, 161, 3)',
             ],
             hoverOffset: 4
         }]

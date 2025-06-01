@@ -6,38 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../../../js/jogadores.js"></script>
-    <link rel="stylesheet" href="../../../jogadores.css">
+    <link rel="stylesheet" href="../../../../css/jogadores.css">
 </head>
 
 <body>
-    <div class="background_brasil">
-        <div class="jogadores_brasil">
-            <a href="./BrunaTakahashi.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Bruna Takahashi</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)" data-id="6" data-favoritado="false">Favoritar Bruna!</button>
-            
-            <a href="./GiuliaTakahashi.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Giulia Takahashi</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)" data-id="7" data-favoritado="false">Favoritar Giulia!</button>
 
-            <a href="./HugoCalderano.html">
-                <div class="jogador">
-                    <img src="../../../img/gato.jpg">
-                    <h1>Hugo Calderano</h1>
-                </div>
-            </a>
-            <button onclick="favoritar(this)" data-id="11" data-favoritado="false">Favoritar Hugo!</button>
+
+    <div class="background_brasil">
+        <nav>
+            <button onclick="voltar()" id="voltar">&#8592;</button>
+        </nav>
+        <div class="jogadores_brasil">
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/Bruna_Takahashi_durante_treino_da_equipe_do_Brasil_48583c9567.webp">
+                <h1>Bruna Takahashi</h1>
+                <button onclick="favoritar(this)" data-id="6" data-favoritado="false">Favoritar Bruna!</button>
+            </div>
+
+
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/giulia.avif">
+                <h1>Giulia Takahashi</h1>
+                <button onclick="favoritar(this)" data-id="7" data-favoritado="false">Favoritar Giulia!</button>
+            </div>
+
+
+
+            <div class="jogador">
+                <img src="../../../../assets/imgs/hugo-calderano-premiacao-3.webp">
+                <h1>Hugo Calderano</h1>
+                <button onclick="favoritar(this)" data-id="11" data-favoritado="false">Favoritar Hugo!</button>
+            </div>
 
         </div>
     </div>
 </body>
+<script>
+
+
+    function voltar() {
+        window.location = "../../../Favoritar.html";
+    }
+</script>
 
 </html>
