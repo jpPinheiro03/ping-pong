@@ -23,9 +23,9 @@
                 </section>
                 <ul>
                     <li>
-                          <a href="quiz.html"> Quiz </a>
+                        <a href="quiz.html"> Quiz </a>
                     </li>
-                    
+
                     <li>
                         <a href="dashboards.html"> Dashboard </a>
                     </li>
@@ -46,13 +46,37 @@
     </header>
 
 
-    <section>
-        
+
+    <section id="curiosidades">
+        <div class="container-curiosidades">
+
+            <div class="curiosidades-conteudo">
+                <h2>Curiosidades</h2>
+                <p>O nome oficial é Tênis de Mesa, mas ficou popularmente conhecido como pingue-pongue devido ao som da
+                    bola quicando na mesa.!</p>
+                <p>Tornou-se um esporte olímpico apenas em 1988, nos Jogos de Seul, apesar de sua longa história!</p>
+                <p>A bola pode atingir velocidades acima de 110 km/h, sendo uma das mais rápidas do mundo em esportes
+                    com bola.!</p>
+                <p>Jogadores profissionais usam raquetes com borrachas específicas para aplicar efeitos extremamente
+                    complexos na bola.!</p>
+            </div>
+
+            <div class="noticias-curiosidade">
+                <h2>News do dia : <span id="data-atual"></span></h2>
+                <ul>
+                    <li>O mundial de 2029 Já tem seu local definido e será no rio de janeiro no Brasil!</li>
+                    <li> Fa Zhendong retorna de sua suposta aposentádoria após a medalha de ouro nas olimpiadas de Paris
+                        2024.
+                        Para disputar a super Copa Chinesa!</li>
+                    <li> Lista de Convocados para o WTT U.S.A já foi liberada pela ITTF.</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-   
 
-     <footer class="rodape">
+
+    <footer class="rodape">
         <div class="container">
             <p>&copy; 2025 Ping-Pong-Life. Todos os direitos reservados.</p>
             <p>Desenvolvido por João Pedro Santos Pinheiro</p>
@@ -60,6 +84,15 @@
     </footer>
 
 
-<script src="../js/graficos.js"></script>
+</body>
+<script>
+    var agora = new Date();
+var dia = agora.getDate();
+var mes = agora.getMonth() + 1;
+var ano = agora.getFullYear();
 
+var data_atual = dia + "/" + mes + "/" + ano;
+
+document.getElementById("data-atual").innerHTML = data_atual;
+</script>
 </html>
