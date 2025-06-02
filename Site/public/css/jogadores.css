@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/*BRASIL SIL SIL*/
+
 
 .background_brasil{
     background-image: url('../assets/paises/brasil.png');
@@ -58,7 +58,7 @@ a{
 }
 
 
-/*CHINA*/
+
 
 .background_china{
     background-image: url('../assets/paises/china.png');
@@ -112,7 +112,7 @@ a {
     color: rgb(31, 26, 3);
 }
 
-/*FRANÇA*/
+
 
 .background_franca {
     background-image: url('../assets/paises/franca.png');
@@ -166,7 +166,7 @@ a {
     color: rgb(31, 26, 3);
 }
 
-/*JAPÃO*/
+
 
 .background_japao {
     background-image: url('../assets/paises/bandeira-japao.jpg');
@@ -220,7 +220,7 @@ a {
     color: rgb(31, 26, 3);
 }
 
-/*SUÉCIA*/
+
 
 .background_suecia{
     background-image: url('../assets/paises/bandeira-da-suecia.jpg');

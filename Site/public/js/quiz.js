@@ -212,7 +212,7 @@ function checarResposta() {
     })
 
   
-    if (numeroDaQuestaoAtual > quantidadeDeQuestoes) {
+    if (numeroDaQuestaoAtual >= quantidadeDeQuestoes) {
         finalizarQuiz()
     }
 }
@@ -240,7 +240,7 @@ function finalizarQuiz() {
     document.getElementById('btnSubmeter').style.display = 'none'
     document.getElementById('btnFim').style.display = 'none'
 
-    alert(`Quiz finalizado! Você acertou ${certas} de ${quantidadeDeQuestoes+1} questões.`)
+    alert(`Quiz finalizado! Você acertou ${certas} de ${quantidadeDeQuestoes} questões.`)
 
     entrar()
     

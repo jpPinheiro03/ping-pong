@@ -93,7 +93,6 @@ footer .rodape a {
   color: #f1f1f1;
   margin: 0 10px;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 
@@ -129,7 +128,7 @@ section{
     background-color: #f7f7f7;
 }
 
-/* Estilo da div que contém o formulário */
+
 .formulario {
     background-color: #ffffff;
     padding: 40px;
@@ -148,13 +147,13 @@ section{
     color: #1d3557;
 }
 
-/* Labels */
+
 .formulario label {
     font-weight: 500;
     color: #333;
 }
 
-/* Inputs e select */
+
 .formulario input,
 .formulario select {
     padding: 10px;
@@ -163,7 +162,7 @@ section{
     font-size: 1em;
 }
 
-/* Botão */
+
 .formulario button {
     background-color: #e63946;
     color: white;

@@ -32,7 +32,7 @@ function listar() {
         <div class="graph">
             <canvas id="myChartCanvas${idUsuario}"></canvas>
         </div>
-        <div class="retry-card">
+        <div class="tentar">
     <h2>Não gostou do seu resultado?</h2>
     <a href="../pages/quiz.html">Tentar novamente</a>
 </div>
@@ -175,37 +175,42 @@ function plotarGraficoEmpunhadura(dados) {
     let valores = [dados.classico, dados.caneta, dados.classineta];
 
     const config = {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: `Valores`,
-                data: valores,
-                backgroundColor: [
-                    'rgb(255, 159, 64)',
-                    'rgb(54, 162, 235)',
-                    'rgb(153, 102, 255)'
-                ],
-                borderColor: [
-                    'rgb(255, 159, 64)',
-                    'rgb(54, 162, 235)',
-                    'rgb(153, 102, 255)'
-                ],
-                borderWidth: 1
-            }]
+    type: 'bar',
+    data: {
+        labels: labels,
+        datasets: [{
+            label: `Valores`, 
+            data: valores,
+            backgroundColor: [
+                'rgb(255, 159, 64)',
+                'rgb(54, 162, 235)',
+                'rgb(153, 102, 255)'
+            ],
+            borderColor: [
+                'rgb(255, 159, 64)',
+                'rgb(54, 162, 235)',
+                'rgb(153, 102, 255)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false 
+            }
         },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    precision: 0
-                }
+        scales: {
+            y: {
+                beginAtZero: true,
+                precision: 0
             }
         }
-    };
+    }
+};
 
     console.log('----------------------------------------------')
-    console.log('O gráfico será plotado com os respectivos valores:')
+    console.log('O gráfico  empunhadura será plotado com os respectivos valores:')
     console.log('Labels:')
     console.log(labels)
     console.log('Dados:')
@@ -215,7 +220,7 @@ function plotarGraficoEmpunhadura(dados) {
     document.getElementById("graficoEmpunhadura").classList.remove("display-none");
     document.getElementById("graficoEmpunhadura").classList.add("display-block");
 
-    // Criar o gráfico
+
     new Chart(
         document.getElementById('graficoEmpunhaduraCanvas'),
         config
