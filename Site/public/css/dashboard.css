@@ -289,7 +289,7 @@ footer .rodape a:hover {
     font-size: 1.1rem;
 }
 
-/* Botões do dashboard */
+
 .btns-dash {
     display: flex;
     align-items: center;
@@ -300,43 +300,79 @@ footer .rodape a:hover {
     padding: 0 20%;
 }
 
-/* Ajuste para telas menores */
-@media (max-width: 1024px) {
-    .dash {
-        width: 95%;
-        padding: 1rem 1rem;
-    }
 
-    .graph {
-        max-width: 100%;
-    }
 
-    .btns-dash {
-        padding: 0 10%;
-    }
-
-    .menu ul {
-        width: 180px;
-        margin-left: -180px;
-    }
-
-    .menu .check_hamburguer:checked ~ ul {
-        margin-left: 0;
-    }
+.kpi-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
-    header nav {
-        gap: 1rem;
-    }
+.kpi {
+  background-color: #1f4191; /* azul escuro */
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1;
+}
 
-    .dash {
-        padding: 1rem 0.5rem;
-    }
+.kpi h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
 
-    .btns-dash {
-        padding: 0 5%;
-        flex-direction: column;
-        gap: 1rem;
-    }
+.kpi span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.retry-card {
+  background-color: #1f4191;
+  color: #ffffff;
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-top: 24px;
+}
+
+.retry-card h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.retry-card a {
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.retry-card a:hover {
+  background-color: #2563eb;
+}
+
+.tituloGraficos {
+  background-color: #1e293b;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
 }

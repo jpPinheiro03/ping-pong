@@ -129,16 +129,17 @@ a:hover {
     width: 2rem;
     height: 2rem;
     z-index: 1;
+    cursor: pointer;
+}
 
-    span {
-        display: block;
-        width: 2rem;
-        height: 0.3rem;
-        margin-bottom: 0.6rem;
-        background-color: var(--corTexto);
-        border-radius: 0.2rem;
-        transition: all 0.2s ease-in-out;
-    }
+.menu .hamburguer span {
+    display: block;
+    width: 100%;
+    height: 0.3rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu .check_hamburguer {
@@ -166,15 +167,17 @@ a:hover {
 
 .menu ul {
     list-style: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    width: 20%;
+    width: 220px;
     height: 100vh;
-    padding-top: 6.25rem;
+    padding-top: 6.5rem;
     background-color: #121212;
-    margin-left: -20%;
-    transition: all 0.2s ease-in-out;
+    margin-left: -220px;
+    transition: margin-left 0.3s ease-in-out;
+    box-shadow: 2px 0 12px rgb(0 0 0 / 0.7);
+    z-index: 99;
 }
 
 .menu .check_hamburguer:checked ~ ul {
@@ -182,11 +185,12 @@ a:hover {
 }
 
 .menu ul li {
-    padding: 1rem 3rem;
+    padding: 1.25rem 2rem;
 }
 
 .menu ul li a {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    display: block;
 }
 
 .secao_logo {
