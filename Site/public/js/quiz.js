@@ -212,7 +212,7 @@ function checarResposta() {
     })
 
   
-    if (numeroDaQuestaoAtual >= quantidadeDeQuestoes) {
+    if (numeroDaQuestaoAtual > quantidadeDeQuestoes) {
         finalizarQuiz()
     }
 }
