@@ -4,9 +4,15 @@ var router = express.Router();
 var jogadoresController = require("../controllers/jogadoresController");
 
 
-router.get("/listarJogadores", jogadoresController.listarJogadores);
+router.get("/listarJogadores",  function(req,res){
+    jogadoresController.listarJogadores(req,res)
+});
 
-router.put("/atualizarVotacaoAdicao", jogadoresController.atualizarVotacaoAdicao);
+
+
+router.put("/atualizarVotacaoAdicao", function (req, res) {
+   jogadoresController.atualizarVotacaoAdicao(req, res);
+});
 
     
 
