@@ -1,48 +1,47 @@
+.botao {
+    background-color: #fefdf3;
+    color: #f6d43b;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.9rem;
+    width: 100px;
+    height: 55px;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 20px;
+}
 
-        .botao {
-                background-color: #fefdf3;
-                color: #f6d43b;
-                border: none;
-                cursor: pointer;
-                border-radius: 0.9rem;
-                width: 100px;
-                height: 55px;
-                transition: 0.3s;
-                font-weight: 700;
-                font-size: 20px;
-        }
-
-        .botao:hover{
-            background-color: #f6d43b;
-            box-shadow: 0 0 0 5px #f6ca3b5f;
-            color: #fff;
-        }
-
-
-
-        
-        .botaoCad {
-                background-color: #fefdf3;
-                color: #f6573b;
-                border: none;
-                cursor: pointer;
-                border-radius: 0.9rem;
-                width: 100px;
-                height: 55px;
-                transition: 0.3s;
-                font-weight: 700;
-                font-size: 20px;
-        }
-
-        .botaoCad:hover{
-            background-color: #f6413b;
-            box-shadow: 0 0 0 5px #f6ca3b5f;
-            color: #fff;
-        }
+.botao:hover {
+    background-color: #f6d43b;
+    box-shadow: 0 0 0 5px #f6ca3b5f;
+    color: #fff;
+}
 
 
 
-        * {
+
+.botaoCad {
+    background-color: #fefdf3;
+    color: #f6573b;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.9rem;
+    width: 100px;
+    height: 55px;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.botaoCad:hover {
+    background-color: #f6413b;
+    box-shadow: 0 0 0 5px #f6ca3b5f;
+    color: #fff;
+}
+
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +54,8 @@ html {
 :root {
     --tamanho-header: 110px;
     --tamanho-footer: 90px;
-    --banner: calc(130vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); }
+    --banner: calc(130vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+}
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -76,7 +76,7 @@ header {
     transition: top 0.2s ease;
 }
 
-nav >ul >li {
+nav>ul>li {
     display: inline-block;
     margin: 1.2rem;
     color: #f1f1f1;
@@ -98,14 +98,14 @@ nav a:hover {
     padding: 0 5%;
 }
 
-.container >h1{
+.container>h1 {
     display: flex;
     justify-content: center;
     margin-left: 17%;
     border: #ffffff solid 2px;
     border-radius: 10px;
     padding: 15px;
-     /* isso aqui é gambiarra pq não tava centralizando (nao sei pq)*/
+    /* isso aqui é gambiarra pq não tava centralizando (nao sei pq)*/
 }
 
 .logo {
@@ -131,17 +131,17 @@ nav a:hover {
 
 .navegacao a {
     font-size: 18px;
-        color: #e1e1e1;
-        font-family: inherit;
-        font-weight: 800;
-        cursor: pointer;
-        position: relative;
-        border: none;
-        background: none;
-        text-transform: uppercase;
-        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-        transition-duration: 400ms;
-        transition-property: color;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
 
 .navegacao a:hover {
@@ -170,38 +170,38 @@ nav a:hover {
 }
 
 
-.intro{
+.intro {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #181818;
 }
 
-.historia{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        margin: 50px;
-        margin-inline: 10%;
+.historia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px;
+    margin-inline: 10%;
 }
 
-.historia_comeco{
+.historia_comeco {
     width: 35%;
     margin-left: 50px;
 }
 
-.historia_fim{
+.historia_fim {
     width: 35%;
-    margin-left: 80px;    
+    margin-left: 80px;
 }
 
 
-.historia_comeco >h1{
+.historia_comeco>h1 {
     font-size: 60px;
 }
 
-.historia_comeco >p{
+.historia_comeco>p {
     font-size: 30px;
     padding: 20px;
     width: 75%;
@@ -213,16 +213,16 @@ nav a:hover {
     margin-bottom: 130px;
 }
 
-.historia_fim >ul >li {
+.historia_fim>ul>li {
     margin-bottom: 70px;
     font-size: 25px;
     list-style: none;
     text-align: center;
 }
 
-.imgs_historia >img{
-width: 800px;
-border-radius: 1.3rem;
+.imgs_historia>img {
+    width: 800px;
+    border-radius: 1.3rem;
 }
 
 
@@ -253,13 +253,13 @@ border-radius: 1.3rem;
 
 }
 
-.content-box >ul >li{
+.content-box>ul>li {
     margin-bottom: 30px;
     font-size: 25px;
     text-align: center;
 }
 
-.content-box >h1{
+.content-box>h1 {
     font-family: "Bebas Neue", sans-serif;
     margin-bottom: 70px;
     text-align: center;
@@ -294,8 +294,3 @@ footer .rodape a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
-
-
-
-

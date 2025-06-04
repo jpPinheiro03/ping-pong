@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   
+
 }
 
 :root {
-    --tamanho-header: 80px;
-    --tamanho-footer: 90px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px)
+  --tamanho-header: 80px;
+  --tamanho-footer: 90px;
+  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px)
 }
 
 body {
@@ -18,28 +18,28 @@ body {
 }
 
 header {
-    background-color: #121212;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    position: sticky;
-    top: 0;
+  background-color: #121212;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
 }
 
 nav a {
-    display: inline-block;
-    margin-left: 1.5rem;
-    padding: 10px 20px; 
-    color: #f1f1f1;
-    text-decoration: none;
-    font-weight: 500;
-    background-color: rgb(127, 76, 49);  
-    border-radius: 8px; 
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-left: 1.5rem;
+  padding: 10px 20px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: rgb(127, 76, 49);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
-    background-color: #383a3a;  
-    transform: scale(1.1);  
+  background-color: #383a3a;
+  transform: scale(1.1);
 }
 
 .container {
@@ -84,8 +84,8 @@ footer {
 }
 
 footer p {
-  margin: 10px 0; 
-  line-height: 1.6; 
+  margin: 10px 0;
+  line-height: 1.6;
 }
 
 
@@ -98,21 +98,21 @@ footer .rodape a {
 
 @media (max-width: 768px) {
   footer {
-    padding: 15px 0; 
+    padding: 15px 0;
   }
 }
 
 
 
 
-section{
+section {
   background-color: white;
   color: black;
   text-align: center;
   height: var(--tamanho-banner);
 }
 
-.cadastro_login{
+.cadastro_login {
   height: auto;
   width: auto;
   border-radius: 30%;
@@ -120,70 +120,70 @@ section{
 }
 
 
-.sessao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    background-color: #f7f7f7;
+.sessao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f7f7f7;
 }
 
 
 .formulario {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .formulario h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #1d3557;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1d3557;
 }
 
 
 .formulario label {
-    font-weight: 500;
-    color: #333;
+  font-weight: 500;
+  color: #333;
 }
 
 
 .formulario input,
 .formulario select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
 
 .formulario button {
-    background-color: #e63946;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #e63946;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .formulario button:hover {
-    background-color: #d62839;
+  background-color: #d62839;
 }
 
 
 @media (max-width: 600px) {
-    .formulario {
-        padding: 30px 20px;
-    }
+  .formulario {
+    padding: 30px 20px;
+  }
 }
 
 .loading-div {
@@ -196,51 +196,48 @@ section{
   height: 50px;
   width: 50px;
 }
+
 #div_erros_login {
   display: none
 }
 
 
- .botaoCad {
-                background-color: #fefdf3;
-                color: #f6573b;
-                border: none;
-                cursor: pointer;
-                border-radius: 0.9rem;
-                width: 100px;
-                height: 55px;
-                transition: 0.3s;
-                font-weight: 700;
-                font-size: 20px;
-        }
+.botaoCad {
+  background-color: #fefdf3;
+  color: #f6573b;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.9rem;
+  width: 100px;
+  height: 55px;
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 20px;
+}
 
-        .botaoCad:hover{
-            background-color: #f6413b;
-            box-shadow: 0 0 0 5px #f6ca3b5f;
-            color: #fff;
-        }
-
-
-
-   .botao-sair {
-                background-color: #fefdf3;
-                color: #f6d43b;
-                border: none;
-                cursor: pointer;
-                border-radius: 0.9rem;
-                width: 100px;
-                height: 55px;
-                transition: 0.3s;
-                font-weight: 700;
-                font-size: 20px;
-        }
-
-        .botao-sair:hover{
-            background-color: #f6d43b;
-            box-shadow: 0 0 0 5px #f6ca3b5f;
-            color: #fff;
-        }
+.botaoCad:hover {
+  background-color: #f6413b;
+  box-shadow: 0 0 0 5px #f6ca3b5f;
+  color: #fff;
+}
 
 
 
+.botao-sair {
+  background-color: #fefdf3;
+  color: #f6d43b;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.9rem;
+  width: 100px;
+  height: 55px;
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 20px;
+}
 
+.botao-sair:hover {
+  background-color: #f6d43b;
+  box-shadow: 0 0 0 5px #f6ca3b5f;
+  color: #fff;
+}

@@ -18,7 +18,7 @@ function listarJogadores(req, res) {
 }
 
 function atualizarVotacaoAdicao(req, res) {
-    const  idJogador  = req.body;
+    const  {idJogador}  = req.body;
 
     jogadoresModel.atualizarVotacaoAdicao(idJogador)
         .then(() => res.status(200).send("Voto adicionado"))

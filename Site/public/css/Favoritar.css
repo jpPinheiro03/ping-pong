@@ -1,5 +1,5 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 
@@ -18,16 +18,16 @@ body {
 }
 
 
-.jogadores{
-    border-radius: 50%;
-    width: 80px;
+.jogadores {
+  border-radius: 50%;
+  width: 80px;
 }
 
-.fav_jg{
-    background-color: white;
-    color: black;
+.fav_jg {
+  background-color: white;
+  color: black;
 }
 
-.texto_jg{
-    font-family: 'Times New Roman', Times, serif;
+.texto_jg {
+  font-family: 'Times New Roman', Times, serif;
 }
